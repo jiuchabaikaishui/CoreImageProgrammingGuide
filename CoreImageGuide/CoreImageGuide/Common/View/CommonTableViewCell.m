@@ -17,15 +17,23 @@
 
 @implementation CommonTableViewCell
 
-- (CommonTableViewCell *(^)(CommonTableViewCellVM *))cellVMSet {
-    return ^(CommonTableViewCellVM *vm){
-        super.cellVMSet(vm);
+- (CommonTableViewCell *(^)(QSPTableViewCellVM *))cellVMSet {
+    return ^(QSPTableViewCellVM *vm){
+        self.titleL.text = vm.title;
+        self.detailL.text = vm.detail;
+        self.accessoryType = vm.accessoryType;
         
-        CommonM *commonM = vm.dataM;
-        self.titleL.text = commonM.title;
-        self.detailL.text = commonM.detail;
-        self.titleL.frame = vm.titleRect;
-        self.detailL.frame = vm.detailRect;
+        CGFloat X = 15.0;
+        CGFloat Y = 8.0;
+        CGFloat W = K_Screen_Width - X - 35;
+        CGFloat H = [vm.title boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellTitleFont} context:nil].size.height;
+        self.titleL.frame = CGRectMake(X, Y, W, H);
+        
+        Y = Y + H + 4;
+        H = [vm.detail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellDetailFont} context:nil].size.height;
+        self.detailL.frame = CGRectMake(X, Y, W, H);
+        
+        vm.cellHeightSet(Y + H + 8);
         
         return self;
     };
@@ -36,14 +44,14 @@
         UILabel *titleL = [[UILabel alloc] init];
         titleL.numberOfLines = 0;
         titleL.textColor = self.textLabel.textColor;
-        titleL.font = K_QSPTableViewCellTitleFont;
+        titleL.font = K_CommonTableViewCellTitleFont;
         [self.contentView addSubview:titleL];
         self.titleL = titleL;
         
         UILabel *detailL = [[UILabel alloc] init];
         detailL.numberOfLines = 0;
         detailL.textColor = self.detailTextLabel.textColor;
-        detailL.font = K_QSPTableViewCellDetailFont;
+        detailL.font = K_CommonTableViewCellDetailFont;
         [self.contentView addSubview:detailL];
         self.detailL = detailL;
     }

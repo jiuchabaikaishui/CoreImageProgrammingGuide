@@ -42,6 +42,8 @@ typedef void (^QSPCreateObjectBlock)(id);
 @property (assign, nonatomic, readonly) Class cellClass;
 @property (strong, nonatomic, readonly) id cellHeight;
 
+@property (strong, nonatomic, readonly) RACSignal *didSelectRowSignal;
+
 + (QSPTableViewVM *)create:(void (^)(QSPTableViewVM *vm))block;
 - (QSPTableViewVM * (^)(QSPTableViewSectionVM *))addSectionVM;
 - (QSPTableViewVM * (^)(Class, QSPCreateObjectBlock))addSectionVMCreate;
@@ -65,7 +67,5 @@ typedef void (^QSPCreateObjectBlock)(id);
 - (id)rowVMWithIndexPath:(NSIndexPath *)indexPath;
 - (NSArray *)allRowVM;
 - (NSInteger)sectionOfSctionVM:(QSPTableViewSectionVM *)vm;
-
-@property (strong, nonatomic, readonly) RACSignal *didSelectRowSignal;
 
 @end

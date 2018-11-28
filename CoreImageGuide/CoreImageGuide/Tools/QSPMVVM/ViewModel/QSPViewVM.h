@@ -13,15 +13,7 @@
 
 typedef void (^QSPSetDataMBlock)(id);
 
-@property (strong, nonatomic, readonly) id dataM;
-
-+ (instancetype)viewVMWithModel:(id)dataM;
-- (instancetype)initWithModel:(id)dataM;
-
 - (RACCommand *)emptyCommand;
 - (RACCommand *)emptyCommandWithEnabled:(RACSignal *)enabledSignal;
-
-- (QSPViewVM * (^)(id))dataMSet;
-- (QSPViewVM * (^)(Class, QSPSetDataMBlock))dataMCreate;
 
 @end

@@ -9,10 +9,6 @@
 #import "QSPViewVM.h"
 #import <UIKit/UIKit.h>
 
-#define K_QSPScreen_Width                           [UIScreen mainScreen].bounds.size.width
-#define K_QSPTableViewHeaderFooterViewFont          [UIFont systemFontOfSize:13]
-#define K_QSPTableViewCellTitleFont                 [UIFont systemFontOfSize:17]
-#define K_QSPTableViewCellDetailFont                [UIFont systemFontOfSize:12]
 typedef void (^QSPSelectedBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
 @interface QSPTableViewCellVM : QSPViewVM

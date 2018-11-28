@@ -10,12 +10,22 @@
 
 @implementation MainTableViewCellVM
 
-- (void)setNextVMSet:(BaseViewControllerVM * _Nonnull)nextVM {
+- (void)setNextVMSet:(BaseViewControllerVM *)nextVM {
     _nextVM = nextVM;
 }
 - (MainTableViewCellVM * (^)(BaseViewControllerVM *))nextVMSet {
     return ^(BaseViewControllerVM *vm) {
         self.nextVMSet = vm;
+        
+        return self;
+    };
+}
+- (void)setNextStoryboardIDSet:(NSString *)storyboardID {
+    _nextStoryboardID = storyboardID;
+}
+- (MainTableViewCellVM * (^)(NSString *))nextStoryboardIDSet {
+    return ^(NSString *storyboardID){
+        self.nextStoryboardIDSet = storyboardID;
         
         return self;
     };

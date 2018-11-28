@@ -21,6 +21,15 @@
 + (instancetype)controllerWithVM:(BaseViewControllerVM *)vm {
     return [[self alloc] initWithVM:vm];
 }
++ (instancetype)controllerWithVM:(BaseViewControllerVM *)vm andStoryboardID:(NSString *)storyboardID {
+    BaseViewController *controller = K_ViewControllerFromMainStorybardWithID(storyboardID);
+    [controller vmSet:vm];
+    
+    return controller;
+}
+- (void)vmSet:(BaseViewControllerVM *)vm {
+    _vm = vm;
+}
 - (instancetype)initWithVM:(BaseViewControllerVM *)vm {
     if (self = [super init]) {
         _vm = vm;
@@ -41,8 +50,11 @@
     [self bindVM];
 }
 
+- (void)settingUI{
+    
+}
 - (void)bindVM {
-    if ([ConFunc blankOfStr:self.vm.title]) {
+    if (![ConFunc blankOfStr:self.vm.title]) {
         self.title = self.vm.title;
     }
 }

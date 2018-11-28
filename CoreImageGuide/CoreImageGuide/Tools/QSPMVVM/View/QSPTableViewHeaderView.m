@@ -18,10 +18,10 @@
     _sectionVM = sectionVM;
     
     if (sectionVM.headerTitle) {
-        self.titleL.text = sectionVM.headerTitle;
+        self.textLabel.text = sectionVM.headerTitle;
     }
     if (sectionVM.headerDetail) {
-        self.detailL.text = sectionVM.headerDetail;
+        self.detailTextLabel.text = sectionVM.headerDetail;
     }
 }
 - (QSPTableViewHeaderView * (^)(QSPTableViewSectionVM *))sectionVMSet {
@@ -34,28 +34,6 @@
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
-        UILabel *titleL = [[UILabel alloc] init];
-        titleL.numberOfLines = 0;
-        titleL.textColor = self.textLabel.textColor;
-        titleL.font = K_QSPTableViewHeaderFooterViewFont;
-        [self.contentView addSubview:titleL];
-        _titleL = titleL;
-
-        UILabel *detailL = [[UILabel alloc] init];
-        detailL.numberOfLines = 0;
-        detailL.textColor = self.detailTextLabel.textColor;
-        detailL.font = K_QSPTableViewHeaderFooterViewFont;
-        [self.contentView addSubview:detailL];
-        _detailL = detailL;
-        
-        CGFloat X = 15;
-        CGFloat Y = 4;
-        CGFloat W = K_QSPScreen_Width - 2*X;
-        CGFloat H = 22;
-        self.titleL.frame = CGRectMake(X, Y, W, H);
-        
-        Y = Y + H + 4;
-        self.detailL.frame = CGRectMake(X, Y, W, H);
     }
     
     return self;

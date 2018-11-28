@@ -7,10 +7,9 @@
 //
 
 #import "QSPTableViewCell.h"
-#import "CommonTableViewCellVM.h"
 
 @interface CommonTableViewCell : QSPTableViewCell
 
-- (CommonTableViewCell *(^)(CommonTableViewCellVM *))cellVMSet;
+- (CommonTableViewCell *(^)(QSPTableViewCellVM *))cellVMSet;
 
 @end

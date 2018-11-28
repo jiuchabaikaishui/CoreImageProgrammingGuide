@@ -11,9 +11,6 @@
 
 @interface QSPTableViewHeaderView : UITableViewHeaderFooterView
 
-@property (weak, nonatomic, readonly) UILabel *titleL;
-@property (weak, nonatomic, readonly) UILabel *detailL;
-
 @property (strong, nonatomic, readonly) QSPTableViewSectionVM *sectionVM;
 
 - (QSPTableViewHeaderView * (^)(QSPTableViewSectionVM *))sectionVMSet;

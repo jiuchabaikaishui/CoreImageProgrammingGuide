@@ -11,11 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainTableViewCellVM : CommonTableViewCellVM
+@interface MainTableViewCellVM : QSPTableViewCellVM
 
+@property (strong, nonatomic, readonly) NSString *nextStoryboardID;
 @property (strong, nonatomic, readonly) BaseViewControllerVM *nextVM;
 
 - (MainTableViewCellVM * (^)(BaseViewControllerVM *))nextVMSet;
+- (MainTableViewCellVM * (^)(NSString *))nextStoryboardIDSet;
 
 @end
 

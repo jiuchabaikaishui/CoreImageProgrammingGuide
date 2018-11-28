@@ -21,8 +21,6 @@
 		5CAB623F21AD3971006B3486 /* CommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB621321AD3971006B3486 /* CommonTableViewCell.m */; };
 		5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB621521AD3971006B3486 /* CommonTableViewHeaderView.m */; };
 		5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB621821AD3971006B3486 /* BaseViewControllerVM.m */; };
-		5CAB624221AD3971006B3486 /* CommonTableViewCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB621A21AD3971006B3486 /* CommonTableViewCellVM.m */; };
-		5CAB624321AD3971006B3486 /* CommonTableViewSectionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB621C21AD3971006B3486 /* CommonTableViewSectionVM.m */; };
 		5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB622121AD3971006B3486 /* UITableView+QSPMVVM.m */; };
 		5CAB624621AD3971006B3486 /* QSPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB622721AD3971006B3486 /* QSPTableViewCell.m */; };
 		5CAB624721AD3971006B3486 /* QSPTableViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB622921AD3971006B3486 /* QSPTableViewFooterView.m */; };
@@ -35,6 +33,9 @@
 		5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB623821AD3971006B3486 /* QSPViewVM.m */; };
 		5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625021AD3F4D006B3486 /* MainVM.m */; };
 		5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */; };
+		5CAB625721AE457C006B3486 /* BasicProcessingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625621AE457C006B3486 /* BasicProcessingVM.m */; };
+		5CAB625A21AE4753006B3486 /* BasicProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */; };
+		5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,10 +68,6 @@
 		5CAB621521AD3971006B3486 /* CommonTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewHeaderView.m; sourceTree = "<group>"; };
 		5CAB621721AD3971006B3486 /* BaseViewControllerVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerVM.h; sourceTree = "<group>"; };
 		5CAB621821AD3971006B3486 /* BaseViewControllerVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewControllerVM.m; sourceTree = "<group>"; };
-		5CAB621921AD3971006B3486 /* CommonTableViewCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTableViewCellVM.h; sourceTree = "<group>"; };
-		5CAB621A21AD3971006B3486 /* CommonTableViewCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewCellVM.m; sourceTree = "<group>"; };
-		5CAB621B21AD3971006B3486 /* CommonTableViewSectionVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTableViewSectionVM.h; sourceTree = "<group>"; };
-		5CAB621C21AD3971006B3486 /* CommonTableViewSectionVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewSectionVM.m; sourceTree = "<group>"; };
 		5CAB622021AD3971006B3486 /* UITableView+QSPMVVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+QSPMVVM.h"; sourceTree = "<group>"; };
 		5CAB622121AD3971006B3486 /* UITableView+QSPMVVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+QSPMVVM.m"; sourceTree = "<group>"; };
 		5CAB622621AD3971006B3486 /* QSPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPTableViewCell.h; sourceTree = "<group>"; };
@@ -95,6 +92,11 @@
 		5CAB625021AD3F4D006B3486 /* MainVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVM.m; sourceTree = "<group>"; };
 		5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCellVM.m; sourceTree = "<group>"; };
 		5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCellVM.h; sourceTree = "<group>"; };
+		5CAB625521AE457C006B3486 /* BasicProcessingVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicProcessingVM.h; sourceTree = "<group>"; };
+		5CAB625621AE457C006B3486 /* BasicProcessingVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicProcessingVM.m; sourceTree = "<group>"; };
+		5CAB625821AE4753006B3486 /* BasicProcessingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicProcessingViewController.h; sourceTree = "<group>"; };
+		5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicProcessingViewController.m; sourceTree = "<group>"; };
+		5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,8 @@
 				5CAB625021AD3F4D006B3486 /* MainVM.m */,
 				5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */,
 				5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */,
+				5CAB625521AE457C006B3486 /* BasicProcessingVM.h */,
+				5CAB625621AE457C006B3486 /* BasicProcessingVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -179,6 +183,8 @@
 			children = (
 				5CAB61EC21AD37BB006B3486 /* MainViewController.h */,
 				5CAB61ED21AD37BB006B3486 /* MainViewController.m */,
+				5CAB625821AE4753006B3486 /* BasicProcessingViewController.h */,
+				5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */,
 				5CAB620D21AD3971006B3486 /* CommonDefine.h */,
 				5CAB620E21AD3971006B3486 /* ConFunc.h */,
 				5CAB620F21AD3971006B3486 /* ConFunc.m */,
@@ -242,10 +249,6 @@
 			children = (
 				5CAB621721AD3971006B3486 /* BaseViewControllerVM.h */,
 				5CAB621821AD3971006B3486 /* BaseViewControllerVM.m */,
-				5CAB621921AD3971006B3486 /* CommonTableViewCellVM.h */,
-				5CAB621A21AD3971006B3486 /* CommonTableViewCellVM.m */,
-				5CAB621B21AD3971006B3486 /* CommonTableViewSectionVM.h */,
-				5CAB621C21AD3971006B3486 /* CommonTableViewSectionVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
 				5CAB61F321AD37C2006B3486 /* Assets.xcassets in Resources */,
 				5CAB61F121AD37BB006B3486 /* Main.storyboard in Resources */,
@@ -444,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAB625A21AE4753006B3486 /* BasicProcessingViewController.m in Sources */,
 				5CAB623C21AD3971006B3486 /* BaseM.m in Sources */,
 				5CAB624B21AD3971006B3486 /* QSPTableViewCellVM.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
@@ -457,13 +462,12 @@
 				5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */,
 				5CAB623F21AD3971006B3486 /* CommonTableViewCell.m in Sources */,
 				5CAB624A21AD3971006B3486 /* QSPScrollViewVM.m in Sources */,
-				5CAB624221AD3971006B3486 /* CommonTableViewCellVM.m in Sources */,
 				5CAB623D21AD3971006B3486 /* CommonM.m in Sources */,
 				5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */,
 				5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */,
 				5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */,
+				5CAB625721AE457C006B3486 /* BasicProcessingVM.m in Sources */,
 				5CAB624621AD3971006B3486 /* QSPTableViewCell.m in Sources */,
-				5CAB624321AD3971006B3486 /* CommonTableViewSectionVM.m in Sources */,
 				5CAB623E21AD3971006B3486 /* ConFunc.m in Sources */,
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,

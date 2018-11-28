@@ -41,6 +41,54 @@
             </objects>
             <point key="canvasLocation" x="484" y="179.46026986506749"/>
         </scene>
+        <!--Basic Processing View Controller-->
+        <scene sceneID="lJL-5Y-Ri6">
+            <objects>
+                <viewController storyboardIdentifier="BasicProcessingViewController" id="xZG-BE-vqa" customClass="BasicProcessingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9oA-jq-PAF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrd-M7-dm3">
+                                <rect key="frame" x="16" y="617" width="167.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Iky-Jt-mfe"/>
+                                </constraints>
+                                <state key="normal" title="重置"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2h-ht-rfG">
+                                <rect key="frame" x="191.5" y="617" width="167.5" height="30"/>
+                                <state key="normal" title="添加滤镜"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG4.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5sB-Cu-Z0I">
+                                <rect key="frame" x="0.0" y="20" width="375" height="589"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y2h-ht-rfG" firstAttribute="leading" secondItem="Mrd-M7-dm3" secondAttribute="trailing" constant="8" id="AYQ-qX-Qd8"/>
+                            <constraint firstItem="Mrd-M7-dm3" firstAttribute="top" secondItem="5sB-Cu-Z0I" secondAttribute="bottom" constant="8" id="BVj-DV-Wl4"/>
+                            <constraint firstItem="ixx-Eu-oEA" firstAttribute="bottom" secondItem="Y2h-ht-rfG" secondAttribute="bottom" constant="20" id="Fgm-Tc-I3u"/>
+                            <constraint firstItem="5sB-Cu-Z0I" firstAttribute="trailing" secondItem="ixx-Eu-oEA" secondAttribute="trailing" id="KAj-Hj-L3i"/>
+                            <constraint firstItem="Mrd-M7-dm3" firstAttribute="leading" secondItem="ixx-Eu-oEA" secondAttribute="leading" constant="16" id="O2n-Mb-bM5"/>
+                            <constraint firstItem="5sB-Cu-Z0I" firstAttribute="leading" secondItem="ixx-Eu-oEA" secondAttribute="leading" id="SZU-9J-Ydh"/>
+                            <constraint firstItem="5sB-Cu-Z0I" firstAttribute="top" secondItem="ixx-Eu-oEA" secondAttribute="top" id="gkH-bv-KoV"/>
+                            <constraint firstItem="Y2h-ht-rfG" firstAttribute="width" secondItem="Mrd-M7-dm3" secondAttribute="width" id="oId-Eg-Q8S"/>
+                            <constraint firstItem="ixx-Eu-oEA" firstAttribute="trailing" secondItem="Y2h-ht-rfG" secondAttribute="trailing" constant="16" id="u6A-Ge-jOn"/>
+                            <constraint firstItem="ixx-Eu-oEA" firstAttribute="bottom" secondItem="Mrd-M7-dm3" secondAttribute="bottom" constant="20" id="wKo-SS-DYX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ixx-Eu-oEA"/>
+                    </view>
+                    <connections>
+                        <outlet property="addB" destination="Y2h-ht-rfG" id="6IF-ux-KLj"/>
+                        <outlet property="imageV" destination="5sB-Cu-Z0I" id="zqW-Ce-h6R"/>
+                        <outlet property="resetB" destination="Mrd-M7-dm3" id="k0a-Al-bVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUc-RQ-jWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="178.56071964017991"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="W5z-72-l1H">
             <objects>
@@ -58,4 +106,7 @@
             <point key="canvasLocation" x="-364" y="181"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WechatIMG4.jpeg" width="1079" height="1618"/>
+    </resources>
 </document>

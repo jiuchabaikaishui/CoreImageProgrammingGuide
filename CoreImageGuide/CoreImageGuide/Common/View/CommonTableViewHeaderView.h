@@ -7,10 +7,9 @@
 //
 
 #import "QSPTableViewHeaderView.h"
-#import "CommonTableViewSectionVM.h"
 
 @interface CommonTableViewHeaderView : QSPTableViewHeaderView
 
-- (QSPTableViewHeaderView * (^)(CommonTableViewSectionVM *))sectionVMSet;
+- (CommonTableViewHeaderView * (^)(QSPTableViewSectionVM *))sectionVMSet;
 
 @end
