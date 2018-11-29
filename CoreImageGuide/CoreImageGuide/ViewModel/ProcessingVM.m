@@ -6,13 +6,13 @@
 //  Copyright © 2018年 綦帅鹏. All rights reserved.
 //
 
-#import "BasicProcessingVM.h"
+#import "ProcessingVM.h"
 
-@implementation BasicProcessingVM
+@implementation ProcessingVM
 
 - (instancetype)init {
     if (self = [super init]) {
-        _resetCommand = [self emptyCommand];
+        _pictureCommand = [self emptyCommand];
         _addCommand = [self emptyCommand];
     }
     

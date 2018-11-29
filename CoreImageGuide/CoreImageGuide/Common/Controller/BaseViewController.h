@@ -15,13 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) BaseViewControllerVM *vm;
 
-+ (instancetype)controllerWithVM:(BaseViewControllerVM *)vm andStoryboardID:(NSString *)storyboardID;
-+ (instancetype)controllerWithVM:(BaseViewControllerVM *)vm;
-- (instancetype)initWithVM:(BaseViewControllerVM *)vm;
--(instancetype)initWithCoder:(NSCoder *)aDecoder andVM:(BaseViewControllerVM *)vm;
-
-- (void)settingUI;
-- (void)bindVM;
+//+ (instancetype)controllerWithVM:(BaseViewControllerVM *)vm andStoryboardID:(NSString *)storyboardID;
+//+ (instancetype)controllerWithVM:(BaseViewControllerVM *)vm;
+//- (instancetype)initWithVM:(BaseViewControllerVM *)vm;
+//-(instancetype)initWithCoder:(NSCoder *)aDecoder andVM:(BaseViewControllerVM *)vm;
+//
+//- (void)settingUI;
+//- (void)bindVM;
 
 @end
 

@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BasicProcessingVM : BaseViewControllerVM
+@interface ProcessingVM : BaseViewControllerVM
 
-@property (strong, nonatomic, readonly) RACCommand *resetCommand;
+@property (strong, nonatomic, readonly) RACCommand *pictureCommand;
 @property (strong, nonatomic, readonly) RACCommand *addCommand;
 
 @end

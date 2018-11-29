@@ -7,13 +7,13 @@
 //
 
 #import "BaseViewController.h"
-#import "BasicProcessingVM.h"
+#import "ProcessingVM.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BasicProcessingViewController : BaseViewController
+@interface ProcessingViewController : BaseViewController
 
-@property (strong, nonatomic, readonly) BasicProcessingVM *processingVM;
+@property (strong, nonatomic, readonly) ProcessingVM *processingVM;
 
 @end
 

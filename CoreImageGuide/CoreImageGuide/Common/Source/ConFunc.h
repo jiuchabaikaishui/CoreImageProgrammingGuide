@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
  字符串判空
  */
 + (BOOL)blankOfStr:(NSString *)str;
++ (void)openSetting;
++ (void)cameraPhotoAlter:(UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate> *)controller removeAction:(void (^)(void))removeAction;
 
 @end
 

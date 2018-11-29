@@ -33,9 +33,11 @@
 		5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB623821AD3971006B3486 /* QSPViewVM.m */; };
 		5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625021AD3F4D006B3486 /* MainVM.m */; };
 		5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */; };
-		5CAB625721AE457C006B3486 /* BasicProcessingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625621AE457C006B3486 /* BasicProcessingVM.m */; };
-		5CAB625A21AE4753006B3486 /* BasicProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */; };
+		5CAB625721AE457C006B3486 /* ProcessingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625621AE457C006B3486 /* ProcessingVM.m */; };
+		5CAB625A21AE4753006B3486 /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625921AE4753006B3486 /* ProcessingViewController.m */; };
 		5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */; };
+		5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627921AFEAC7006B3486 /* CombineViewController.m */; };
+		5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627C21AFEAED006B3486 /* CombineVM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,11 +94,15 @@
 		5CAB625021AD3F4D006B3486 /* MainVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVM.m; sourceTree = "<group>"; };
 		5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCellVM.m; sourceTree = "<group>"; };
 		5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCellVM.h; sourceTree = "<group>"; };
-		5CAB625521AE457C006B3486 /* BasicProcessingVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicProcessingVM.h; sourceTree = "<group>"; };
-		5CAB625621AE457C006B3486 /* BasicProcessingVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicProcessingVM.m; sourceTree = "<group>"; };
-		5CAB625821AE4753006B3486 /* BasicProcessingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicProcessingViewController.h; sourceTree = "<group>"; };
-		5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicProcessingViewController.m; sourceTree = "<group>"; };
+		5CAB625521AE457C006B3486 /* ProcessingVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingVM.h; sourceTree = "<group>"; };
+		5CAB625621AE457C006B3486 /* ProcessingVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingVM.m; sourceTree = "<group>"; };
+		5CAB625821AE4753006B3486 /* ProcessingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingViewController.h; sourceTree = "<group>"; };
+		5CAB625921AE4753006B3486 /* ProcessingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingViewController.m; sourceTree = "<group>"; };
 		5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
+		5CAB627821AFEAC7006B3486 /* CombineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineViewController.h; sourceTree = "<group>"; };
+		5CAB627921AFEAC7006B3486 /* CombineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineViewController.m; sourceTree = "<group>"; };
+		5CAB627B21AFEAED006B3486 /* CombineVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineVM.h; sourceTree = "<group>"; };
+		5CAB627C21AFEAED006B3486 /* CombineVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineVM.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +178,10 @@
 				5CAB625021AD3F4D006B3486 /* MainVM.m */,
 				5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */,
 				5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */,
-				5CAB625521AE457C006B3486 /* BasicProcessingVM.h */,
-				5CAB625621AE457C006B3486 /* BasicProcessingVM.m */,
+				5CAB625521AE457C006B3486 /* ProcessingVM.h */,
+				5CAB625621AE457C006B3486 /* ProcessingVM.m */,
+				5CAB627B21AFEAED006B3486 /* CombineVM.h */,
+				5CAB627C21AFEAED006B3486 /* CombineVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,8 +191,10 @@
 			children = (
 				5CAB61EC21AD37BB006B3486 /* MainViewController.h */,
 				5CAB61ED21AD37BB006B3486 /* MainViewController.m */,
-				5CAB625821AE4753006B3486 /* BasicProcessingViewController.h */,
-				5CAB625921AE4753006B3486 /* BasicProcessingViewController.m */,
+				5CAB625821AE4753006B3486 /* ProcessingViewController.h */,
+				5CAB625921AE4753006B3486 /* ProcessingViewController.m */,
+				5CAB627821AFEAC7006B3486 /* CombineViewController.h */,
+				5CAB627921AFEAC7006B3486 /* CombineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -448,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CAB625A21AE4753006B3486 /* BasicProcessingViewController.m in Sources */,
+				5CAB625A21AE4753006B3486 /* ProcessingViewController.m in Sources */,
 				5CAB623C21AD3971006B3486 /* BaseM.m in Sources */,
 				5CAB624B21AD3971006B3486 /* QSPTableViewCellVM.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
@@ -466,10 +476,12 @@
 				5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */,
 				5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */,
 				5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */,
-				5CAB625721AE457C006B3486 /* BasicProcessingVM.m in Sources */,
+				5CAB625721AE457C006B3486 /* ProcessingVM.m in Sources */,
 				5CAB624621AD3971006B3486 /* QSPTableViewCell.m in Sources */,
+				5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */,
 				5CAB623E21AD3971006B3486 /* ConFunc.m in Sources */,
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
+				5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
 			);
@@ -619,6 +631,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,6 +653,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
