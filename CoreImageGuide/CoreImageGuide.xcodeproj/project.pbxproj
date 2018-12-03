@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4730639C1E53D51496BF3E70 /* libPods-CoreImageGuide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */; };
+		5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5C688C9121B4E404006D0CB2 /* 录屏480.mov */; };
+		5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C688C9421B4E443006D0CB2 /* VideoViewController.m */; };
 		5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61EA21AD37BB006B3486 /* AppDelegate.m */; };
 		5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61ED21AD37BB006B3486 /* MainViewController.m */; };
 		5CAB61F121AD37BB006B3486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB61EF21AD37BB006B3486 /* Main.storyboard */; };
@@ -38,12 +40,32 @@
 		5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */; };
 		5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627921AFEAC7006B3486 /* CombineViewController.m */; };
 		5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627C21AFEAED006B3486 /* CombineVM.m */; };
+		5CB5237221B5129900B499FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5237121B5129900B499FA /* AppDelegate.m */; };
+		5CB5237421B5129A00B499FA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237321B5129A00B499FA /* GameScene.sks */; };
+		5CB5237621B5129A00B499FA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237521B5129A00B499FA /* Actions.sks */; };
+		5CB5237921B5129A00B499FA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5237821B5129A00B499FA /* GameScene.m */; };
+		5CB5237C21B5129A00B499FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5237B21B5129A00B499FA /* GameViewController.m */; };
+		5CB5237F21B5129A00B499FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237D21B5129A00B499FA /* Main.storyboard */; };
+		5CB5238121B512A600B499FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5238021B512A600B499FA /* Assets.xcassets */; };
+		5CB5238421B512A600B499FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5238221B512A600B499FA /* LaunchScreen.storyboard */; };
+		5CB5238721B512A600B499FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5238621B512A600B499FA /* main.m */; };
+		5CB5239321B5200700B499FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5239221B5200700B499FA /* AppDelegate.m */; };
+		5CB5239521B5200800B499FA /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5239421B5200800B499FA /* art.scnassets */; };
+		5CB5239821B5200800B499FA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5239721B5200800B499FA /* GameViewController.m */; };
+		5CB5239B21B5200800B499FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5239921B5200800B499FA /* Main.storyboard */; };
+		5CB5239D21B5201200B499FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5239C21B5201200B499FA /* Assets.xcassets */; };
+		5CB523A021B5201200B499FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5239E21B5201200B499FA /* LaunchScreen.storyboard */; };
+		5CB523A321B5201200B499FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523A221B5201200B499FA /* main.m */; };
+		5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D021B53A4F00B499FA /* MetalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		468D1FE811D368E3029D7940 /* Pods-CoreImageGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageGuide/Pods-CoreImageGuide.release.xcconfig"; sourceTree = "<group>"; };
 		47741C95533BEC9B59B70EB7 /* Pods-CoreImageGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageGuide/Pods-CoreImageGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreImageGuide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C688C9121B4E404006D0CB2 /* 录屏480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "录屏480.mov"; sourceTree = "<group>"; };
+		5C688C9321B4E443006D0CB2 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		5C688C9421B4E443006D0CB2 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		5CAB61E621AD37BB006B3486 /* CoreImageGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreImageGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAB61E921AD37BB006B3486 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CAB61EA21AD37BB006B3486 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +125,33 @@
 		5CAB627921AFEAC7006B3486 /* CombineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineViewController.m; sourceTree = "<group>"; };
 		5CAB627B21AFEAED006B3486 /* CombineVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineVM.h; sourceTree = "<group>"; };
 		5CAB627C21AFEAED006B3486 /* CombineVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineVM.m; sourceTree = "<group>"; };
+		5CB5236E21B5129900B499FA /* SpriteKitUseCoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUseCoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB5237021B5129900B499FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CB5237121B5129900B499FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CB5237321B5129A00B499FA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5CB5237521B5129A00B499FA /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		5CB5237721B5129A00B499FA /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		5CB5237821B5129A00B499FA /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		5CB5237A21B5129A00B499FA /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		5CB5237B21B5129A00B499FA /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5CB5237E21B5129A00B499FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CB5238021B512A600B499FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CB5238321B512A600B499FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CB5238521B512A600B499FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB5238621B512A600B499FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CB5238F21B5200700B499FA /* SceneKitUseCoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneKitUseCoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB5239121B5200700B499FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CB5239221B5200700B499FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CB5239421B5200800B499FA /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		5CB5239621B5200800B499FA /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		5CB5239721B5200800B499FA /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5CB5239A21B5200800B499FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CB5239C21B5201200B499FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CB5239F21B5201200B499FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CB523A121B5201200B499FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB523A221B5201200B499FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CB523CF21B53A4F00B499FA /* MetalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalViewController.h; sourceTree = "<group>"; };
+		5CB523D021B53A4F00B499FA /* MetalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +163,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CB5236B21B5129900B499FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB5238C21B5200700B499FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				5CAB61E821AD37BB006B3486 /* CoreImageGuide */,
+				5CB5236F21B5129900B499FA /* SpriteKitUseCoreImage */,
+				5CB5239021B5200700B499FA /* SceneKitUseCoreImage */,
 				5CAB61E721AD37BB006B3486 /* Products */,
 				CBA0E3F8328168B4F9314F59 /* Pods */,
 				96A488BE33F22152D2F05ED3 /* Frameworks */,
@@ -131,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				5CAB61E621AD37BB006B3486 /* CoreImageGuide.app */,
+				5CB5236E21B5129900B499FA /* SpriteKitUseCoreImage.app */,
+				5CB5238F21B5200700B499FA /* SceneKitUseCoreImage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +262,10 @@
 				5CAB625921AE4753006B3486 /* ProcessingViewController.m */,
 				5CAB627821AFEAC7006B3486 /* CombineViewController.h */,
 				5CAB627921AFEAC7006B3486 /* CombineViewController.m */,
+				5C688C9321B4E443006D0CB2 /* VideoViewController.h */,
+				5C688C9421B4E443006D0CB2 /* VideoViewController.m */,
+				5CB523CF21B53A4F00B499FA /* MetalViewController.h */,
+				5CB523D021B53A4F00B499FA /* MetalViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +305,7 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5C688C9121B4E404006D0CB2 /* 录屏480.mov */,
 				5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */,
 				5CAB620D21AD3971006B3486 /* CommonDefine.h */,
 				5CAB620E21AD3971006B3486 /* ConFunc.h */,
@@ -344,6 +416,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5CB5236F21B5129900B499FA /* SpriteKitUseCoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				5CB5237021B5129900B499FA /* AppDelegate.h */,
+				5CB5237121B5129900B499FA /* AppDelegate.m */,
+				5CB5237321B5129A00B499FA /* GameScene.sks */,
+				5CB5237521B5129A00B499FA /* Actions.sks */,
+				5CB5237721B5129A00B499FA /* GameScene.h */,
+				5CB5237821B5129A00B499FA /* GameScene.m */,
+				5CB5237A21B5129A00B499FA /* GameViewController.h */,
+				5CB5237B21B5129A00B499FA /* GameViewController.m */,
+				5CB5237D21B5129A00B499FA /* Main.storyboard */,
+				5CB5238021B512A600B499FA /* Assets.xcassets */,
+				5CB5238221B512A600B499FA /* LaunchScreen.storyboard */,
+				5CB5238521B512A600B499FA /* Info.plist */,
+				5CB5238621B512A600B499FA /* main.m */,
+			);
+			path = SpriteKitUseCoreImage;
+			sourceTree = "<group>";
+		};
+		5CB5239021B5200700B499FA /* SceneKitUseCoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				5CB5239121B5200700B499FA /* AppDelegate.h */,
+				5CB5239221B5200700B499FA /* AppDelegate.m */,
+				5CB5239421B5200800B499FA /* art.scnassets */,
+				5CB5239621B5200800B499FA /* GameViewController.h */,
+				5CB5239721B5200800B499FA /* GameViewController.m */,
+				5CB5239921B5200800B499FA /* Main.storyboard */,
+				5CB5239C21B5201200B499FA /* Assets.xcassets */,
+				5CB5239E21B5201200B499FA /* LaunchScreen.storyboard */,
+				5CB523A121B5201200B499FA /* Info.plist */,
+				5CB523A221B5201200B499FA /* main.m */,
+			);
+			path = SceneKitUseCoreImage;
+			sourceTree = "<group>";
+		};
 		96A488BE33F22152D2F05ED3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +491,40 @@
 			productReference = 5CAB61E621AD37BB006B3486 /* CoreImageGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CB5236D21B5129900B499FA /* SpriteKitUseCoreImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB5238A21B512A600B499FA /* Build configuration list for PBXNativeTarget "SpriteKitUseCoreImage" */;
+			buildPhases = (
+				5CB5236A21B5129900B499FA /* Sources */,
+				5CB5236B21B5129900B499FA /* Frameworks */,
+				5CB5236C21B5129900B499FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpriteKitUseCoreImage;
+			productName = SpriteKitUseCoreImage;
+			productReference = 5CB5236E21B5129900B499FA /* SpriteKitUseCoreImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CB5238E21B5200700B499FA /* SceneKitUseCoreImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB523A421B5201200B499FA /* Build configuration list for PBXNativeTarget "SceneKitUseCoreImage" */;
+			buildPhases = (
+				5CB5238B21B5200700B499FA /* Sources */,
+				5CB5238C21B5200700B499FA /* Frameworks */,
+				5CB5238D21B5200700B499FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SceneKitUseCoreImage;
+			productName = SceneKitUseCoreImage;
+			productReference = 5CB5238F21B5200700B499FA /* SceneKitUseCoreImage.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -392,6 +535,12 @@
 				ORGANIZATIONNAME = "綦帅鹏";
 				TargetAttributes = {
 					5CAB61E521AD37BB006B3486 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5CB5236D21B5129900B499FA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5CB5238E21B5200700B499FA = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -410,6 +559,8 @@
 			projectRoot = "";
 			targets = (
 				5CAB61E521AD37BB006B3486 /* CoreImageGuide */,
+				5CB5236D21B5129900B499FA /* SpriteKitUseCoreImage */,
+				5CB5238E21B5200700B499FA /* SceneKitUseCoreImage */,
 			);
 		};
 /* End PBXProject section */
@@ -420,9 +571,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */,
+				5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
 				5CAB61F321AD37C2006B3486 /* Assets.xcassets in Resources */,
 				5CAB61F121AD37BB006B3486 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB5236C21B5129900B499FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5237F21B5129A00B499FA /* Main.storyboard in Resources */,
+				5CB5237421B5129A00B499FA /* GameScene.sks in Resources */,
+				5CB5238121B512A600B499FA /* Assets.xcassets in Resources */,
+				5CB5238421B512A600B499FA /* LaunchScreen.storyboard in Resources */,
+				5CB5237621B5129A00B499FA /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB5238D21B5200700B499FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5239521B5200800B499FA /* art.scnassets in Resources */,
+				5CB523A021B5201200B499FA /* LaunchScreen.storyboard in Resources */,
+				5CB5239D21B5201200B499FA /* Assets.xcassets in Resources */,
+				5CB5239B21B5200800B499FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +639,7 @@
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
 				5CAB624821AD3971006B3486 /* QSPTableViewHeaderView.m in Sources */,
 				5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */,
+				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
 				5CAB61F921AD37C2006B3486 /* main.m in Sources */,
 				5CAB624C21AD3971006B3486 /* QSPTableViewSectionVM.m in Sources */,
@@ -478,12 +654,34 @@
 				5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */,
 				5CAB625721AE457C006B3486 /* ProcessingVM.m in Sources */,
 				5CAB624621AD3971006B3486 /* QSPTableViewCell.m in Sources */,
+				5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */,
 				5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */,
 				5CAB623E21AD3971006B3486 /* ConFunc.m in Sources */,
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
 				5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB5236A21B5129900B499FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5237921B5129A00B499FA /* GameScene.m in Sources */,
+				5CB5237C21B5129A00B499FA /* GameViewController.m in Sources */,
+				5CB5238721B512A600B499FA /* main.m in Sources */,
+				5CB5237221B5129900B499FA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB5238B21B5200700B499FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB5239821B5200800B499FA /* GameViewController.m in Sources */,
+				5CB523A321B5201200B499FA /* main.m in Sources */,
+				5CB5239321B5200700B499FA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +700,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				5CAB61F521AD37C2006B3486 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CB5237D21B5129A00B499FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CB5237E21B5129A00B499FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CB5238221B512A600B499FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CB5238321B512A600B499FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CB5239921B5200800B499FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CB5239A21B5200800B499FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CB5239E21B5201200B499FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CB5239F21B5201200B499FA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -665,6 +895,70 @@
 			};
 			name = Release;
 		};
+		5CB5238821B512A600B499FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpriteKitUseCoreImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iapppay.SpriteKitUseCoreImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CB5238921B512A600B499FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SpriteKitUseCoreImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iapppay.SpriteKitUseCoreImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CB523A521B5201200B499FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneKitUseCoreImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iapppay.SceneKitUseCoreImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CB523A621B5201200B499FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneKitUseCoreImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iapppay.SceneKitUseCoreImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -682,6 +976,24 @@
 			buildConfigurations = (
 				5CAB61FD21AD37C2006B3486 /* Debug */,
 				5CAB61FE21AD37C2006B3486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB5238A21B512A600B499FA /* Build configuration list for PBXNativeTarget "SpriteKitUseCoreImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB5238821B512A600B499FA /* Debug */,
+				5CB5238921B512A600B499FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB523A421B5201200B499FA /* Build configuration list for PBXNativeTarget "SceneKitUseCoreImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB523A521B5201200B499FA /* Debug */,
+				5CB523A621B5201200B499FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

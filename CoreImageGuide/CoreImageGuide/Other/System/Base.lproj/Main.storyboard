@@ -37,6 +37,8 @@
                         <outlet property="tableV" destination="VdC-f6-EMv" id="6fx-fD-FeI"/>
                         <segue destination="xZG-BE-vqa" kind="show" identifier="MainToProcessing" id="zLX-Fe-229"/>
                         <segue destination="Mf7-Ur-MBh" kind="show" identifier="MainToCombine" id="Mw6-Hv-L8X"/>
+                        <segue destination="bK9-ZU-MLD" kind="show" identifier="MainToVideo" id="sgf-1t-j2a"/>
+                        <segue destination="FIF-wP-IOk" kind="show" identifier="MainToTetal" id="0ev-Yv-1fl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,6 +127,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVI-dx-ch6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1236" y="948.57571214392806"/>
+        </scene>
+        <!--Metal渲染图片滤镜-->
+        <scene sceneID="MBY-eP-eef">
+            <objects>
+                <viewController id="FIF-wP-IOk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ne7-If-hCP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-gy-Y8J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="top" secondItem="Ne7-If-hCP" secondAttribute="top" id="5WR-j2-PVT"/>
+                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="trailing" secondItem="JT8-ZB-NmB" secondAttribute="trailing" id="T8O-tv-5RX"/>
+                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="bottom" secondItem="JT8-ZB-NmB" secondAttribute="bottom" id="dta-pr-UYL"/>
+                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="leading" secondItem="JT8-ZB-NmB" secondAttribute="leading" id="ezM-Sn-Btv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JT8-ZB-NmB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Metal渲染图片滤镜" id="JrX-aZ-Ml4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycl-bm-soh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="-1204.047976011994"/>
+        </scene>
+        <!--处理视频-->
+        <scene sceneID="SEL-W0-l06">
+            <objects>
+                <viewController id="bK9-ZU-MLD" customClass="VideoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCe-ir-h6K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pjT-iE-Vil"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="处理视频" id="N9A-Lb-nJj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pee-qj-YJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1236" y="-527.58620689655174"/>
         </scene>
         <!--滤镜基本使用-->
         <scene sceneID="lJL-5Y-Ri6">

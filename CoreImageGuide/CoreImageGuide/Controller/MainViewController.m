@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import <Metal/Metal.h>
 
 @interface MainViewController ()
 

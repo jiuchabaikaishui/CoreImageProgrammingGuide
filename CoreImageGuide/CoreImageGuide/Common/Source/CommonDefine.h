@@ -29,6 +29,7 @@
 
 #define K_WeakSelf          __weak typeof(self) weakSelf = self;
 #define K_Application       [UIApplication sharedApplication]
+#define K_MainBundle        [NSBundle mainBundle]
 
 #define K_ViewControllerFromMainStorybardWithID(ID)          [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:ID]
 #endif /* CommonDefine_h */
