@@ -40,6 +40,7 @@
                         <segue destination="bK9-ZU-MLD" kind="show" identifier="MainToVideo" id="sgf-1t-j2a"/>
                         <segue destination="FIF-wP-IOk" kind="show" identifier="MainToTetal" id="0ev-Yv-1fl"/>
                         <segue destination="EOO-Oy-TET" kind="show" identifier="MainToFace" id="NJC-At-vNm"/>
+                        <segue destination="NTD-hS-3Qg" kind="show" identifier="MainToEnhance" id="OGk-tP-Ahi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -297,6 +298,63 @@
             </objects>
             <point key="canvasLocation" x="1236" y="178.56071964017991"/>
         </scene>
+        <!--自动增强-->
+        <scene sceneID="uJ5-Va-pM7">
+            <objects>
+                <viewController id="NTD-hS-3Qg" customClass="EnhanceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="51S-1w-jnh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG7.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-a9-6mJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB5-mP-fy1">
+                                <rect key="frame" x="16" y="617" width="31" height="30"/>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="NTD-hS-3Qg" eventType="touchUpInside" id="3mB-il-a1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duW-1e-Sbs">
+                                <rect key="frame" x="55" y="617" width="31" height="30"/>
+                                <state key="normal" title="增强"/>
+                                <connections>
+                                    <action selector="enhanceAction:" destination="NTD-hS-3Qg" eventType="touchUpInside" id="HnM-xU-CxA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="duW-1e-Sbs" firstAttribute="top" secondItem="CKw-a9-6mJ" secondAttribute="bottom" constant="8" id="9CU-dX-A1f"/>
+                            <constraint firstItem="CKw-a9-6mJ" firstAttribute="leading" secondItem="bOo-Sv-rVS" secondAttribute="leading" id="NlN-AJ-P7P"/>
+                            <constraint firstItem="bOo-Sv-rVS" firstAttribute="bottom" secondItem="duW-1e-Sbs" secondAttribute="bottom" constant="20" id="QhA-RX-AdQ"/>
+                            <constraint firstItem="bOo-Sv-rVS" firstAttribute="bottom" secondItem="uB5-mP-fy1" secondAttribute="bottom" constant="20" id="VAj-Mv-8jF"/>
+                            <constraint firstItem="CKw-a9-6mJ" firstAttribute="trailing" secondItem="bOo-Sv-rVS" secondAttribute="trailing" id="WF3-jJ-afe"/>
+                            <constraint firstItem="uB5-mP-fy1" firstAttribute="leading" secondItem="bOo-Sv-rVS" secondAttribute="leading" constant="16" id="heL-gX-GtR"/>
+                            <constraint firstItem="uB5-mP-fy1" firstAttribute="top" secondItem="CKw-a9-6mJ" secondAttribute="bottom" constant="8" id="jC1-9z-aTE"/>
+                            <constraint firstItem="duW-1e-Sbs" firstAttribute="leading" secondItem="uB5-mP-fy1" secondAttribute="trailing" constant="8" id="jjg-fN-dPJ"/>
+                            <constraint firstItem="CKw-a9-6mJ" firstAttribute="top" secondItem="bOo-Sv-rVS" secondAttribute="top" id="r7L-gO-6vZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bOo-Sv-rVS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="自动增强" id="UON-52-o31">
+                        <barButtonItem key="rightBarButtonItem" title="图片" id="Zsr-SJ-wPu">
+                            <connections>
+                                <action selector="pictureAction:" destination="NTD-hS-3Qg" id="wSz-YM-Oem"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="enhanceB" destination="duW-1e-Sbs" id="qqc-6K-18r"/>
+                        <outlet property="imageV" destination="CKw-a9-6mJ" id="6bj-F2-RtQ"/>
+                        <outlet property="resetB" destination="uB5-mP-fy1" id="4Ph-kQ-epW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcf-da-MZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940" y="179.46026986506749"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="W5z-72-l1H">
             <objects>
@@ -316,6 +374,7 @@
     </scenes>
     <resources>
         <image name="WechatIMG4.jpeg" width="1079" height="1618"/>
+        <image name="WechatIMG7.jpeg" width="720" height="1280"/>
         <image name="timg.jpeg" width="1200" height="800"/>
     </resources>
 </document>

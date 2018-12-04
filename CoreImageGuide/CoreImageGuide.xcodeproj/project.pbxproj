@@ -57,6 +57,8 @@
 		5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D021B53A4F00B499FA /* MetalViewController.m */; };
 		5CB523D421B65B8400B499FA /* FaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D321B65B8400B499FA /* FaceViewController.m */; };
 		5CB523D621B65CED00B499FA /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB523D521B65CEC00B499FA /* timg.jpeg */; };
+		5CB523D921B68A5D00B499FA /* EnhanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D821B68A5D00B499FA /* EnhanceViewController.m */; };
+		5CB523DB21B690CD00B499FA /* WechatIMG7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB523DA21B690CD00B499FA /* WechatIMG7.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +153,9 @@
 		5CB523D221B65B8400B499FA /* FaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
 		5CB523D321B65B8400B499FA /* FaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceViewController.m; sourceTree = "<group>"; };
 		5CB523D521B65CEC00B499FA /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		5CB523D721B68A5D00B499FA /* EnhanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnhanceViewController.h; sourceTree = "<group>"; };
+		5CB523D821B68A5D00B499FA /* EnhanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnhanceViewController.m; sourceTree = "<group>"; };
+		5CB523DA21B690CD00B499FA /* WechatIMG7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG7.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +268,8 @@
 				5CB523D021B53A4F00B499FA /* MetalViewController.m */,
 				5CB523D221B65B8400B499FA /* FaceViewController.h */,
 				5CB523D321B65B8400B499FA /* FaceViewController.m */,
+				5CB523D721B68A5D00B499FA /* EnhanceViewController.h */,
+				5CB523D821B68A5D00B499FA /* EnhanceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +309,7 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5CB523DA21B690CD00B499FA /* WechatIMG7.jpeg */,
 				5CB523D521B65CEC00B499FA /* timg.jpeg */,
 				5C688C9121B4E404006D0CB2 /* 录屏480.mov */,
 				5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */,
@@ -569,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */,
+				5CB523DB21B690CD00B499FA /* WechatIMG7.jpeg in Resources */,
 				5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */,
 				5CB523D621B65CED00B499FA /* timg.jpeg in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
@@ -655,6 +664,7 @@
 				5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */,
 				5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */,
 				5CAB623E21AD3971006B3486 /* ConFunc.m in Sources */,
+				5CB523D921B68A5D00B499FA /* EnhanceViewController.m in Sources */,
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
 				5CB523D421B65B8400B499FA /* FaceViewController.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,

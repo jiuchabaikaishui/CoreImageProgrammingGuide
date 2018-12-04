@@ -37,6 +37,13 @@
                 cellVM.segueIDSet(@"MainToFace");
             });
         });
+        _tableViewVM.addQSPSectionVMCreate(^(QSPTableViewSectionVM *sectionVM){
+            sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"自动增强图像").headerDetailSet(@"Core Image的自动增强功能可分析图像的直方图，然后改善图像");
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"图像自动增强滤镜").detailSet(@"不必立即应用自动调整滤镜。可以保存滤镜名称和参数值以供日后使用。保存它们可让您的应用程序稍后执行增强功能，而无需再次分析图像。");
+                cellVM.segueIDSet(@"MainToEnhance");
+            });
+        });
     }
     
     return _tableViewVM;
