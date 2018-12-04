@@ -39,6 +39,7 @@
                         <segue destination="Mf7-Ur-MBh" kind="show" identifier="MainToCombine" id="Mw6-Hv-L8X"/>
                         <segue destination="bK9-ZU-MLD" kind="show" identifier="MainToVideo" id="sgf-1t-j2a"/>
                         <segue destination="FIF-wP-IOk" kind="show" identifier="MainToTetal" id="0ev-Yv-1fl"/>
+                        <segue destination="EOO-Oy-TET" kind="show" identifier="MainToFace" id="NJC-At-vNm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,6 +159,67 @@
             </objects>
             <point key="canvasLocation" x="1236" y="-1204.047976011994"/>
         </scene>
+        <!--面部检测-->
+        <scene sceneID="b9G-9A-uds">
+            <objects>
+                <viewController id="EOO-Oy-TET" customClass="FaceViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jae-ec-pQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Kju-Pf-5ZX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5D5-Jk-LB6">
+                                <rect key="frame" x="16" y="617" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NHg-TK-pRr"/>
+                                </constraints>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="EOO-Oy-TET" eventType="touchUpInside" id="hBz-0y-WIh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2y6-Rf-Ze4">
+                                <rect key="frame" x="70" y="617" width="62" height="30"/>
+                                <state key="normal" title="检测面孔"/>
+                                <connections>
+                                    <action selector="detectorAction:" destination="EOO-Oy-TET" eventType="touchUpInside" id="Yrl-Gx-LQJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kju-Pf-5ZX" firstAttribute="trailing" secondItem="mbZ-qV-47Y" secondAttribute="trailing" id="AHs-fa-0LL"/>
+                            <constraint firstItem="mbZ-qV-47Y" firstAttribute="bottom" secondItem="2y6-Rf-Ze4" secondAttribute="bottom" constant="20" id="Dot-rz-Yw0"/>
+                            <constraint firstItem="2y6-Rf-Ze4" firstAttribute="leading" secondItem="5D5-Jk-LB6" secondAttribute="trailing" constant="23" id="LI3-B9-92y"/>
+                            <constraint firstItem="Kju-Pf-5ZX" firstAttribute="top" secondItem="mbZ-qV-47Y" secondAttribute="top" id="Tws-Oz-c1V"/>
+                            <constraint firstItem="2y6-Rf-Ze4" firstAttribute="top" secondItem="Kju-Pf-5ZX" secondAttribute="bottom" constant="8" id="VlA-hN-oaz"/>
+                            <constraint firstItem="5D5-Jk-LB6" firstAttribute="top" secondItem="Kju-Pf-5ZX" secondAttribute="bottom" constant="8" id="WZl-DH-d9l"/>
+                            <constraint firstItem="5D5-Jk-LB6" firstAttribute="leading" secondItem="mbZ-qV-47Y" secondAttribute="leading" constant="16" id="jpd-KG-mj6"/>
+                            <constraint firstItem="mbZ-qV-47Y" firstAttribute="bottom" secondItem="5D5-Jk-LB6" secondAttribute="bottom" constant="20" id="pnE-ZN-xdd"/>
+                            <constraint firstItem="Kju-Pf-5ZX" firstAttribute="leading" secondItem="mbZ-qV-47Y" secondAttribute="leading" id="wJd-h5-Afd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mbZ-qV-47Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="面部检测" id="p5C-bP-beX">
+                        <barButtonItem key="rightBarButtonItem" title="图片" id="1uE-tx-NRB">
+                            <connections>
+                                <action selector="pictureAction:" destination="EOO-Oy-TET" id="f4U-Bg-01w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detectorB" destination="2y6-Rf-Ze4" id="VPg-CN-b9G"/>
+                        <outlet property="imageV" destination="Kju-Pf-5ZX" id="oX0-V7-gvy"/>
+                        <outlet property="pictureB" destination="1uE-tx-NRB" id="iqB-Ls-rlN"/>
+                        <outlet property="resetB" destination="5D5-Jk-LB6" id="cr7-uq-oij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLV-RU-iTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="-528.48575712143929"/>
+        </scene>
         <!--处理视频-->
         <scene sceneID="SEL-W0-l06">
             <objects>
@@ -254,5 +316,6 @@
     </scenes>
     <resources>
         <image name="WechatIMG4.jpeg" width="1079" height="1618"/>
+        <image name="timg.jpeg" width="1200" height="800"/>
     </resources>
 </document>

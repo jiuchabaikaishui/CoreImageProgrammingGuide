@@ -20,9 +20,6 @@
 @implementation ProcessingViewController
 
 #pragma mark - 属性方法
-- (ProcessingVM *)processingVM {
-    return (ProcessingVM *)self.vm;
-}
 
 #pragma mark - 控制器周期
 - (void)viewDidLoad {
@@ -33,7 +30,7 @@
     [RACObserve(self.imageV, image) subscribeNext:^(id  _Nullable x) {
         @strongify(self);
         self.resetB.enabled = self.imageV.image != self.currentI;
-        self.addB.enabled = self.imageV.image;
+        self.addB.enabled = self.imageV.image ? YES : NO;
     }];
 }
 

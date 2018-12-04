@@ -1,8 +1,8 @@
 //
-//  BasicProcessingViewController.h
+//  FaceViewController.h
 //  CoreImageGuide
 //
-//  Created by 綦帅鹏 on 2018/11/28.
+//  Created by 綦帅鹏 on 2018/12/4.
 //  Copyright © 2018年 綦帅鹏. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ProcessingViewController : BaseViewController
+@interface FaceViewController : BaseViewController
 
 @end
 

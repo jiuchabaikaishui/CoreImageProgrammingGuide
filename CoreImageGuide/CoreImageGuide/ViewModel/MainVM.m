@@ -30,6 +30,13 @@
                 cellVM.segueIDSet(@"MainToTetal").accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"Metal渲染图片滤镜").detailSet(@"使用MetalKit视图（MTKView）渲染Core Image输出图像");
             });
         });
+        _tableViewVM.addQSPSectionVMCreate(^(QSPTableViewSectionVM *sectionVM){
+            sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"面部检测").headerDetailSet(@"分析和查找图像中的人脸");
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"检测面孔及其特征").detailSet(@"CIDetector类在图像中查找面空并分析特征");
+                cellVM.segueIDSet(@"MainToFace");
+            });
+        });
     }
     
     return _tableViewVM;

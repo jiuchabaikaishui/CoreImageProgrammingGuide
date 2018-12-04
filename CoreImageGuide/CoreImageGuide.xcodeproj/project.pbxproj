@@ -35,11 +35,9 @@
 		5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB623821AD3971006B3486 /* QSPViewVM.m */; };
 		5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625021AD3F4D006B3486 /* MainVM.m */; };
 		5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */; };
-		5CAB625721AE457C006B3486 /* ProcessingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625621AE457C006B3486 /* ProcessingVM.m */; };
 		5CAB625A21AE4753006B3486 /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625921AE4753006B3486 /* ProcessingViewController.m */; };
 		5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */; };
 		5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627921AFEAC7006B3486 /* CombineViewController.m */; };
-		5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627C21AFEAED006B3486 /* CombineVM.m */; };
 		5CB5237221B5129900B499FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5237121B5129900B499FA /* AppDelegate.m */; };
 		5CB5237421B5129A00B499FA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237321B5129A00B499FA /* GameScene.sks */; };
 		5CB5237621B5129A00B499FA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237521B5129A00B499FA /* Actions.sks */; };
@@ -57,6 +55,8 @@
 		5CB523A021B5201200B499FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5239E21B5201200B499FA /* LaunchScreen.storyboard */; };
 		5CB523A321B5201200B499FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523A221B5201200B499FA /* main.m */; };
 		5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D021B53A4F00B499FA /* MetalViewController.m */; };
+		5CB523D421B65B8400B499FA /* FaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523D321B65B8400B499FA /* FaceViewController.m */; };
+		5CB523D621B65CED00B499FA /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB523D521B65CEC00B499FA /* timg.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,15 +116,11 @@
 		5CAB625021AD3F4D006B3486 /* MainVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVM.m; sourceTree = "<group>"; };
 		5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCellVM.m; sourceTree = "<group>"; };
 		5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCellVM.h; sourceTree = "<group>"; };
-		5CAB625521AE457C006B3486 /* ProcessingVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingVM.h; sourceTree = "<group>"; };
-		5CAB625621AE457C006B3486 /* ProcessingVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingVM.m; sourceTree = "<group>"; };
 		5CAB625821AE4753006B3486 /* ProcessingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProcessingViewController.h; sourceTree = "<group>"; };
 		5CAB625921AE4753006B3486 /* ProcessingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessingViewController.m; sourceTree = "<group>"; };
 		5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
 		5CAB627821AFEAC7006B3486 /* CombineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineViewController.h; sourceTree = "<group>"; };
 		5CAB627921AFEAC7006B3486 /* CombineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineViewController.m; sourceTree = "<group>"; };
-		5CAB627B21AFEAED006B3486 /* CombineVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineVM.h; sourceTree = "<group>"; };
-		5CAB627C21AFEAED006B3486 /* CombineVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineVM.m; sourceTree = "<group>"; };
 		5CB5236E21B5129900B499FA /* SpriteKitUseCoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUseCoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB5237021B5129900B499FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CB5237121B5129900B499FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -152,6 +148,9 @@
 		5CB523A221B5201200B499FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CB523CF21B53A4F00B499FA /* MetalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalViewController.h; sourceTree = "<group>"; };
 		5CB523D021B53A4F00B499FA /* MetalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalViewController.m; sourceTree = "<group>"; };
+		5CB523D221B65B8400B499FA /* FaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceViewController.h; sourceTree = "<group>"; };
+		5CB523D321B65B8400B499FA /* FaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceViewController.m; sourceTree = "<group>"; };
+		5CB523D521B65CEC00B499FA /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,10 +244,6 @@
 				5CAB625021AD3F4D006B3486 /* MainVM.m */,
 				5CAB625321AD424D006B3486 /* MainTableViewCellVM.h */,
 				5CAB625221AD424D006B3486 /* MainTableViewCellVM.m */,
-				5CAB625521AE457C006B3486 /* ProcessingVM.h */,
-				5CAB625621AE457C006B3486 /* ProcessingVM.m */,
-				5CAB627B21AFEAED006B3486 /* CombineVM.h */,
-				5CAB627C21AFEAED006B3486 /* CombineVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -266,6 +261,8 @@
 				5C688C9421B4E443006D0CB2 /* VideoViewController.m */,
 				5CB523CF21B53A4F00B499FA /* MetalViewController.h */,
 				5CB523D021B53A4F00B499FA /* MetalViewController.m */,
+				5CB523D221B65B8400B499FA /* FaceViewController.h */,
+				5CB523D321B65B8400B499FA /* FaceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +302,7 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5CB523D521B65CEC00B499FA /* timg.jpeg */,
 				5C688C9121B4E404006D0CB2 /* 录屏480.mov */,
 				5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */,
 				5CAB620D21AD3971006B3486 /* CommonDefine.h */,
@@ -572,6 +570,7 @@
 			files = (
 				5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */,
 				5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */,
+				5CB523D621B65CED00B499FA /* timg.jpeg in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
 				5CAB61F321AD37C2006B3486 /* Assets.xcassets in Resources */,
 				5CAB61F121AD37BB006B3486 /* Main.storyboard in Resources */,
@@ -652,13 +651,12 @@
 				5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */,
 				5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */,
 				5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */,
-				5CAB625721AE457C006B3486 /* ProcessingVM.m in Sources */,
 				5CAB624621AD3971006B3486 /* QSPTableViewCell.m in Sources */,
 				5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */,
 				5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */,
 				5CAB623E21AD3971006B3486 /* ConFunc.m in Sources */,
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
-				5CAB627D21AFEAED006B3486 /* CombineVM.m in Sources */,
+				5CB523D421B65B8400B499FA /* FaceViewController.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
 			);
