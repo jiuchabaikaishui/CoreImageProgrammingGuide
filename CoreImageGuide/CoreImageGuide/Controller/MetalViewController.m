@@ -12,6 +12,7 @@
 
 @interface MetalViewController () <MTKViewDelegate>
 
+@property (weak, nonatomic) IBOutlet MTKView *metalV;
 @property (strong, nonatomic) id<MTLDevice> device;
 @property (strong, nonatomic) id<MTLCommandQueue> commandQueue;
 @property (strong, nonatomic) id<MTLTexture> sourceTexture;
@@ -37,10 +38,9 @@
     self.device = MTLCreateSystemDefaultDevice();
     self.commandQueue = [self.device newCommandQueue];
     
-    MTKView *view = (MTKView *)self.view;
-    view.delegate = self;
-    view.device = self.device;
-    view.framebufferOnly = NO;
+    self.metalV.delegate = self;
+    self.metalV.device = self.device;
+    self.metalV.framebufferOnly = NO;
     
     self.context = [CIContext contextWithMTLDevice:self.device];
 }
@@ -61,15 +61,5 @@
         [commandBuffer commit];
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

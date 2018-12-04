@@ -131,29 +131,28 @@
         <!--Metal渲染图片滤镜-->
         <scene sceneID="MBY-eP-eef">
             <objects>
-                <viewController id="FIF-wP-IOk" sceneMemberID="viewController">
+                <viewController id="FIF-wP-IOk" customClass="MetalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ne7-If-hCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-gy-Y8J">
+                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Depth32Float" translatesAutoresizingMaskIntoConstraints="NO" id="ipr-dM-tq9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </mtkView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="top" secondItem="Ne7-If-hCP" secondAttribute="top" id="5WR-j2-PVT"/>
-                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="trailing" secondItem="JT8-ZB-NmB" secondAttribute="trailing" id="T8O-tv-5RX"/>
-                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="bottom" secondItem="JT8-ZB-NmB" secondAttribute="bottom" id="dta-pr-UYL"/>
-                            <constraint firstItem="hvh-gy-Y8J" firstAttribute="leading" secondItem="JT8-ZB-NmB" secondAttribute="leading" id="ezM-Sn-Btv"/>
+                            <constraint firstItem="ipr-dM-tq9" firstAttribute="bottom" secondItem="JT8-ZB-NmB" secondAttribute="bottom" id="9aQ-kU-whd"/>
+                            <constraint firstItem="ipr-dM-tq9" firstAttribute="trailing" secondItem="JT8-ZB-NmB" secondAttribute="trailing" id="CWQ-cV-kK4"/>
+                            <constraint firstItem="ipr-dM-tq9" firstAttribute="top" secondItem="Ne7-If-hCP" secondAttribute="top" id="TTl-ZA-pYR"/>
+                            <constraint firstItem="ipr-dM-tq9" firstAttribute="leading" secondItem="JT8-ZB-NmB" secondAttribute="leading" id="tmg-LH-Vo7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JT8-ZB-NmB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Metal渲染图片滤镜" id="JrX-aZ-Ml4"/>
+                    <connections>
+                        <outlet property="metalV" destination="ipr-dM-tq9" id="lqh-am-qEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycl-bm-soh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
