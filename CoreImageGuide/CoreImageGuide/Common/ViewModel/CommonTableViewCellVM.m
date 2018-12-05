@@ -29,7 +29,7 @@
         CGFloat X = 15.0;
         CGFloat Y = 8.0;
         CGFloat W = K_Screen_Width - X - 35;
-        CGFloat H = [title boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellTitleFont} context:nil].size.height;
+        CGFloat H = ceil([title boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellTitleFont} context:nil].size.height);
         self.titleRect = CGRectMake(X, Y, W, H);
         
         if (self.detail) {
@@ -37,7 +37,7 @@
         }
         
         if (!self.height) {
-            super.cellHeightSet(Y + H + 8 + (self.detailRect.size.height > 0 ? self.detailRect.size.height + 4 : 0));
+            super.cellHeightSet(ceil(Y + H + 8 + (self.detailRect.size.height > 0 ? self.detailRect.size.height + 4 : 0)));
         }
         
         return self;
@@ -50,7 +50,7 @@
         CGFloat X = 15.0;
         CGFloat Y = self.titleRect.origin.y + self.titleRect.size.height + 4;
         CGFloat W = K_Screen_Width - X - 35;
-        CGFloat H = [detail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellDetailFont} context:nil].size.height;
+        CGFloat H = ceil([detail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewCellDetailFont} context:nil].size.height);
         self.detailRect = CGRectMake(X, Y, W, H);
         
         if (!self.height) {

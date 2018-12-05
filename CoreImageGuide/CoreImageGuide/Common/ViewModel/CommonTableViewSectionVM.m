@@ -29,7 +29,7 @@
         CGFloat X = 15;
         CGFloat Y = 4;
         CGFloat W = K_Screen_Width - 2*X;
-        CGFloat H = [title boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
+        CGFloat H = ceil([title boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height);
         self.headerTitleRect = CGRectMake(X, Y, W, H);
         
         if (self.headerDetail) {
@@ -50,7 +50,7 @@
         CGFloat X = 15;
         CGFloat Y = self.headerTitleRect.origin.y + self.headerTitleRect.size.height +  4;
         CGFloat W = K_Screen_Width - 2*X;
-        CGFloat H = [detail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
+        CGFloat H = ceil([detail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height);
         self.headerDetailRect = CGRectMake(X, Y, W, H);
         
         if (!self.headerH) {
