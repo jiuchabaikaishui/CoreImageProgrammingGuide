@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainTableViewCellVM : QSPTableViewCellVM
+@interface MainTableViewCellVM : CommonTableViewCellVM
 
 @property (strong, nonatomic, readonly) NSString *segueID;
 

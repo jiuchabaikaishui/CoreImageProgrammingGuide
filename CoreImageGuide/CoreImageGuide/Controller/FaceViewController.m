@@ -50,7 +50,6 @@
         CGSize size = self.currentI.size;
         UIGraphicsBeginImageContext(size);
         [self.imageV.image drawInRect: (CGRect){{0, 0}, size}];
-        DebugLog(@"-----------%@", NSStringFromCGSize(size));
         NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:size.width/60], NSForegroundColorAttributeName: [UIColor redColor]};
         for (CIFaceFeature *feature in features) {
             CGRect rect = (CGRect){{feature.bounds.origin.x, size.height - feature.bounds.origin.y - feature.bounds.size.height}, feature.bounds.size};

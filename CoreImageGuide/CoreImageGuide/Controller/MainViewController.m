@@ -7,9 +7,12 @@
 //
 
 #import "MainViewController.h"
+#import "MainVM.h"
 #import <Metal/Metal.h>
 
 @interface MainViewController ()
+
+@property (strong, nonatomic, readonly) MainVM *mainVM;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableV;
 

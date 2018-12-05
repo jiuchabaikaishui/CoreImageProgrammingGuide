@@ -41,6 +41,7 @@
                         <segue destination="FIF-wP-IOk" kind="show" identifier="MainToTetal" id="0ev-Yv-1fl"/>
                         <segue destination="EOO-Oy-TET" kind="show" identifier="MainToFace" id="NJC-At-vNm"/>
                         <segue destination="NTD-hS-3Qg" kind="show" identifier="MainToEnhance" id="OGk-tP-Ahi"/>
+                        <segue destination="MtP-l8-9Cg" kind="show" identifier="MainToQuery" id="Vug-OT-gMI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -159,6 +160,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycl-bm-soh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1236" y="-1204.047976011994"/>
+        </scene>
+        <!--查询滤镜-->
+        <scene sceneID="Nc3-pT-ioc">
+            <objects>
+                <viewController id="MtP-l8-9Cg" customClass="QueryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZFx-hF-ftG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ig-Hh-HFl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Ig-Hh-HFl" firstAttribute="top" secondItem="ZFx-hF-ftG" secondAttribute="top" id="MdL-gY-Udb"/>
+                            <constraint firstItem="0Ig-Hh-HFl" firstAttribute="trailing" secondItem="zPM-pD-w9A" secondAttribute="trailing" id="Poo-dZ-Nr3"/>
+                            <constraint firstItem="0Ig-Hh-HFl" firstAttribute="bottom" secondItem="zPM-pD-w9A" secondAttribute="bottom" id="lXB-zN-Hq6"/>
+                            <constraint firstItem="0Ig-Hh-HFl" firstAttribute="leading" secondItem="zPM-pD-w9A" secondAttribute="leading" id="s6J-Fc-Fyq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zPM-pD-w9A"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="查询滤镜" id="aZ8-ZR-aCM"/>
+                    <connections>
+                        <outlet property="tableView" destination="0Ig-Hh-HFl" id="yi8-1I-Xvs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stc-z0-UTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="-528.48575712143929"/>
         </scene>
         <!--面部检测-->
         <scene sceneID="b9G-9A-uds">

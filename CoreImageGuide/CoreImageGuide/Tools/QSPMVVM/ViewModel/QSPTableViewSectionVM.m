@@ -24,8 +24,8 @@
     if (self = [super init]) {
         _headerClass = QSPTableViewHeaderView.class;
         _footerClass = QSPTableViewFooterView.class;
-//        _headerHeight = @(0.0);
-//        _footerHeight = @(0.0);
+//        _headerHeight = @(52.0);
+//        _footerHeight = @(52.0);
     }
     
     return self;
@@ -141,19 +141,19 @@
 }
 - (void)setHeaderTitleSet:(NSString *)value {
     _headerTitle = value;
-    _headerHeight = self.headerDetail ? @(52.0) : (self.headerTitle ? @(30.0) : @(0.0));
+//    _headerHeight = self.headerDetail ? @(52.0) : (self.headerTitle ? @(30.0) : @(0.0));
 }
 - (void)setHeaderDetailSet:(NSString *)value {
     _headerDetail = value;
-    _headerHeight = self.headerDetail ? @(52.0): (self.headerTitle ? @(30.0) : @(0.0));
+//    _headerHeight = self.headerDetail ? @(52.0): (self.headerTitle ? @(30.0) : @(0.0));
 }
 - (void)setFooterTitleSet:(NSString *)value {
     _footerTitle = value;
-    _footerHeight = self.footerDetail ? @(52.0): (self.footerTitle ? @(30.0) : @(0.0));
+//    _footerHeight = self.footerDetail ? @(52.0): (self.footerTitle ? @(30.0) : @(0.0));
 }
 - (void)setFooterDetailSet:(NSString *)value {
     _footerDetail = value;
-    _footerHeight = self.footerDetail ? @(52.0): (self.footerTitle ? @(30.0) : @(0.0));
+//    _footerHeight = self.footerDetail ? @(52.0): (self.footerTitle ? @(30.0) : @(0.0));
 }
 - (QSPTableViewSectionVM * (^)(NSString *))headerTitleSet {
     return ^(NSString *value){

@@ -7,6 +7,7 @@
 //
 
 #import "QSPTableViewCell.h"
+#import "CommonTableViewCellVM.h"
 
 @interface CommonTableViewCell : QSPTableViewCell
 

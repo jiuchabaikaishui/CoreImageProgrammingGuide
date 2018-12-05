@@ -7,11 +7,8 @@
 //
 
 #import "BaseViewController.h"
-#import "MainVM.h"
 
 @interface MainViewController : BaseViewController
-
-@property (strong, nonatomic, readonly) MainVM *mainVM;
 
 @end
 

@@ -268,7 +268,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     QSPTableViewCellVM *rowMV = [self rowVMWithIndexPath:indexPath];
-    Class cellClass = self.cellClass ? self.cellClass : (rowMV.cellClass ? rowMV.cellClass : QSPTableViewCell.class);
+    Class cellClass = rowMV.cellClass ? rowMV.cellClass : (self.cellClass ? self.cellClass : QSPTableViewCell.class);
     NSString *identifier = NSStringFromClass(cellClass);
     QSPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -291,8 +291,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     QSPTableViewSectionVM *sectionVM = [self sectionVMWithSection:section];
     id height = sectionVM.headerHeight ? sectionVM.headerHeight : self.sectionHeaderHeight;
+    
+    CGFloat H = 0.0;
+    if (sectionVM.headerTitle) {
+        H = sectionVM.headerDetail ? 52.0 : 30.0;
+    } else {
+        H = sectionVM.headerDetail ? 52.0 : 0.0;
+    }
+    CGFloat value = height ? [height floatValue] : H;
 
-    return height ? [height floatValue] : 0.0;
+    return value;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     QSPTableViewSectionVM *sectionVM = [self sectionVMWithSection:section];
@@ -317,8 +325,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     QSPTableViewSectionVM *sectionVM = [self sectionVMWithSection:section];
     id height = sectionVM.footerHeight ? sectionVM.footerHeight : self.sectionFooterHeight;
+    
+    CGFloat H = 0.0;
+    if (sectionVM.footerTitle) {
+        H = sectionVM.footerDetail ? 52.0 : 30.0;
+    } else {
+        H = sectionVM.footerDetail ? 52.0 : 0.0;
+    }
+    CGFloat value = height ? [height floatValue] : H;
 
-    return height ? [height floatValue] : 0.0;
+    return value;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     QSPTableViewSectionVM *sectionVM = [self sectionVMWithSection:section];

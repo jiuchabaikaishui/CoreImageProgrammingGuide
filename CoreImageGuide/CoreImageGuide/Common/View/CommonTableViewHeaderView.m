@@ -16,22 +16,28 @@
 @end
 
 @implementation CommonTableViewHeaderView
-- (CommonTableViewHeaderView * (^)(QSPTableViewSectionVM *))sectionVMSet {
+- (QSPTableViewHeaderView * (^)(QSPTableViewSectionVM *))sectionVMSet {
     return ^(QSPTableViewSectionVM *vm){
         self.titleL.text = vm.headerTitle;
         self.detailL.text = vm.headerDetail;
         
-        CGFloat X = 15;
-        CGFloat Y = 4;
-        CGFloat W = K_Screen_Width - 2*X;
-        CGFloat H = [vm.headerTitle boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
-        self.titleL.frame = CGRectMake(X, Y, W, H);
+//        CGFloat X = 15;
+//        CGFloat Y = 4;
+//        CGFloat W = K_Screen_Width - 2*X;
+//        CGFloat H = [vm.headerTitle boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
+//        self.titleL.frame = CGRectMake(X, Y, W, H);
+//
+//        Y = Y + H + 8;
+//        H = [vm.headerDetail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
+//        self.detailL.frame = CGRectMake(X, Y, W, H);
+//
+//        vm.headerHeightSet(Y + H + 4);
         
-        Y = Y + H + 8;
-        H = [vm.headerDetail boundingRectWithSize:CGSizeMake(W, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: K_CommonTableViewHeaderFooterViewFont} context:nil].size.height;
-        self.detailL.frame = CGRectMake(X, Y, W, H);
-        
-        vm.headerHeightSet(Y + H + 4);
+        if ([vm isKindOfClass:CommonTableViewSectionVM.class]) {
+            CommonTableViewSectionVM *commonVM = (CommonTableViewSectionVM *)vm;
+            self.titleL.frame = commonVM.headerTitleRect;
+            self.detailL.frame = commonVM.headerDetailRect;
+        }
         
         return self;
     };
