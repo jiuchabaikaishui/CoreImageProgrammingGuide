@@ -51,6 +51,17 @@
                 cellVM.segueIDSet(@"MainToQuery");
             });
         });
+        _tableViewVM.addSectionVMCreate(CommonTableViewSectionVM.class, ^(CommonTableViewSectionVM *sectionVM){
+            sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"子类化CIFilter自定义特效").headerDetailSet(@"创建要多次使用CIFilter的效果时，子类化以将效果封装为滤镜");
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIColorInvert滤镜").detailSet(@"反转输入图像的颜色");
+                cellVM.segueIDSet(@"MainToInvert");
+            });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIChromaKey滤镜").detailSet(@"色度键控合成图像");
+                cellVM.segueIDSet(@"MainToChromaKey");
+            });
+        });
     }
     
     return _tableViewVM;
