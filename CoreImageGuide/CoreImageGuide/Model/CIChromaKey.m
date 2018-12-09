@@ -22,23 +22,24 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
     else {
         // r = g = b = 0        // s = 0, v is undefined
         *s = 0;
-        *h = -1;
+        *h = 0;
         return;
     }
     if( r == max )
-        *h = ( g - b ) / delta;     // between yellow & magenta
+        *h = (g - b)/delta;     // between yellow & magenta
     else if( g == max )
-        *h = 2 + ( b - r ) / delta; // between cyan & yellow
+        *h = 2 + (b - r)/delta; // between cyan & yellow
     else
-        *h = 4 + ( r - g ) / delta; // between magenta & cyan
+        *h = 4 + (r - g)/delta; // between magenta & cyan
     *h *= 60;               // degrees
     if( *h < 0 )
         *h += 360;
+    
+    *h /= 360;
 }
 - (CIImage *)outputImage {
     unsigned int size = 256;
-    float cubeDataSize = size*size*size*sizeof(float)*4;
-    float *cubeData = malloc(cubeDataSize);
+    float *cubeData = malloc(size*size*size*sizeof(float)*4);
     float rgb[3], hsv[3], *c = cubeData;
     for (int b = 0; b < size; b++) {
         rgb[2] = b/(double)size;
@@ -57,7 +58,7 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
         }
     }
     
-    NSData *data = [NSData dataWithBytesNoCopy:cubeData length:sizeof(cubeData) freeWhenDone:YES];
+    NSData *data = [NSData dataWithBytesNoCopy:cubeData length:size*size*size*sizeof(float)*4 freeWhenDone:YES];
     CIFilter *filter = [CIFilter filterWithName:@"CIColorCube"];
     [filter setValue:data forKey:@"inputCubeData"];
     [filter setValue:self.inputImage forKey:kCIInputImageKey];

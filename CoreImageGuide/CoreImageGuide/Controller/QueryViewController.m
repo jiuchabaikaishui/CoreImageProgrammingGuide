@@ -38,11 +38,11 @@
 - (void)bindVM {
     self.tableView.vmSet(self.queryVM.tableViewVM);
     
-    @weakify(self);
-    [self.queryVM.tableViewVM.didSelectRowSignal subscribeNext:^(QSPTableViewAndIndexPath *x) {
-        @strongify(self);
-        QSPTableViewCellVM *cellVM = [x.tableView.vm rowVMWithIndexPath:x.indexPath];
-    }];
+//    @weakify(self);
+//    [self.queryVM.tableViewVM.didSelectRowSignal subscribeNext:^(QSPTableViewAndIndexPath *x) {
+//        @strongify(self);
+//        QSPTableViewCellVM *cellVM = [x.tableView.vm rowVMWithIndexPath:x.indexPath];
+//    }];
 }
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "ColorInvertViewController.h"
-#import "CIColorInvert.h"
+#import "CIColorInverte.h"
 
 @interface ColorInvertViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
@@ -46,7 +46,7 @@
     self.imageV.image = self.currentI;
 }
 - (IBAction)invertAction:(UIButton *)sender {
-    CIColorInvert *filter = [[CIColorInvert alloc] init];
+    CIColorInverte *filter = [[CIColorInverte alloc] init];
     filter.inputImage = [[CIImage alloc] initWithImage:self.currentI];
     CIContext *context = [CIContext context];
     CGImageRef image = [context createCGImage:filter.outputImage fromRect:filter.outputImage.extent];

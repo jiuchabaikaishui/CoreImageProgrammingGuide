@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CIColorInvert : CIFilter
+@interface CIColorInverte : CIFilter
 
 @property (strong, nonatomic) CIImage *inputImage;
 

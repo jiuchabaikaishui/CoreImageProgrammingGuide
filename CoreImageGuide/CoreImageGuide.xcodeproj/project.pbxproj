@@ -63,7 +63,7 @@
 		5CB523E121B7A54B00B499FA /* QueryVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523E021B7A54B00B499FA /* QueryVM.m */; };
 		5CB523E621B7B8E400B499FA /* CommonTableViewSectionVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523E321B7B8E400B499FA /* CommonTableViewSectionVM.m */; };
 		5CB523E721B7B8E400B499FA /* CommonTableViewCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523E421B7B8E400B499FA /* CommonTableViewCellVM.m */; };
-		5CB523EA21BA1EEA00B499FA /* CIColorInvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523E921BA1EEA00B499FA /* CIColorInvert.m */; };
+		5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523E921BA1EEA00B499FA /* CIColorInverte.m */; };
 		5CB523ED21BA260900B499FA /* ColorInvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EC21BA260900B499FA /* ColorInvertViewController.m */; };
 		5CB523F021BA551000B499FA /* CIChromaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EF21BA551000B499FA /* CIChromaKey.m */; };
 		5CB523F321BA706000B499FA /* ChromaKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523F221BA706000B499FA /* ChromaKeyViewController.m */; };
@@ -174,8 +174,8 @@
 		5CB523E321B7B8E400B499FA /* CommonTableViewSectionVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewSectionVM.m; sourceTree = "<group>"; };
 		5CB523E421B7B8E400B499FA /* CommonTableViewCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewCellVM.m; sourceTree = "<group>"; };
 		5CB523E521B7B8E400B499FA /* CommonTableViewSectionVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTableViewSectionVM.h; sourceTree = "<group>"; };
-		5CB523E821BA1EEA00B499FA /* CIColorInvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIColorInvert.h; sourceTree = "<group>"; };
-		5CB523E921BA1EEA00B499FA /* CIColorInvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIColorInvert.m; sourceTree = "<group>"; };
+		5CB523E821BA1EEA00B499FA /* CIColorInverte.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIColorInverte.h; sourceTree = "<group>"; };
+		5CB523E921BA1EEA00B499FA /* CIColorInverte.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIColorInverte.m; sourceTree = "<group>"; };
 		5CB523EB21BA260900B499FA /* ColorInvertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorInvertViewController.h; sourceTree = "<group>"; };
 		5CB523EC21BA260900B499FA /* ColorInvertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorInvertViewController.m; sourceTree = "<group>"; };
 		5CB523EE21BA551000B499FA /* CIChromaKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIChromaKey.h; sourceTree = "<group>"; };
@@ -460,8 +460,8 @@
 		5CAB623A21AD3971006B3486 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5CB523E821BA1EEA00B499FA /* CIColorInvert.h */,
-				5CB523E921BA1EEA00B499FA /* CIColorInvert.m */,
+				5CB523E821BA1EEA00B499FA /* CIColorInverte.h */,
+				5CB523E921BA1EEA00B499FA /* CIColorInverte.m */,
 				5CB523EE21BA551000B499FA /* CIChromaKey.h */,
 				5CB523EF21BA551000B499FA /* CIChromaKey.m */,
 			);
@@ -695,7 +695,7 @@
 				5CAB624B21AD3971006B3486 /* QSPTableViewCellVM.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
 				5CAB624821AD3971006B3486 /* QSPTableViewHeaderView.m in Sources */,
-				5CB523EA21BA1EEA00B499FA /* CIColorInvert.m in Sources */,
+				5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */,
 				5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */,
 				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
@@ -922,7 +922,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CBB7T9SG3B;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;
@@ -945,7 +945,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CBB7T9SG3B;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;

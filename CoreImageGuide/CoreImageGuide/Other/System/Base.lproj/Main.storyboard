@@ -416,7 +416,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lG8-fp-BpB">
-                                <rect key="frame" x="92" y="617" width="231" height="31"/>
+                                <rect key="frame" x="92" y="617" width="221" height="31"/>
                                 <connections>
                                     <action selector="maxAtion:" destination="hmG-c4-Unc" eventType="valueChanged" id="J4z-5d-nfr"/>
                                 </connections>
@@ -427,17 +427,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91b-gv-4mj">
-                                <rect key="frame" x="329" y="626" width="30" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91b-gv-4mj">
+                                <rect key="frame" x="319" y="626" width="40" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="2RV-9J-Aa1"/>
+                                    <constraint firstAttribute="width" constant="40" id="iVJ-nQ-vKX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-OY-BoL">
-                                <rect key="frame" x="92" y="551" width="231" height="31"/>
+                                <rect key="frame" x="92" y="551" width="221" height="31"/>
                                 <connections>
                                     <action selector="minAction:" destination="hmG-c4-Unc" eventType="valueChanged" id="KjN-BR-0sw"/>
                                 </connections>
@@ -448,17 +448,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-pg-bOq">
-                                <rect key="frame" x="329" y="560" width="30" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-pg-bOq">
+                                <rect key="frame" x="319" y="560" width="40" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Xad-Il-WGj"/>
+                                    <constraint firstAttribute="width" constant="40" id="1Ne-D2-gSM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-MP-Gav">
-                                <rect key="frame" x="94" y="589" width="227" height="20"/>
+                                <rect key="frame" x="94" y="589" width="217" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Bbg-nN-RBv"/>
                                 </constraints>
@@ -510,7 +510,9 @@
                     <connections>
                         <outlet property="colorIV" destination="VPt-MP-Gav" id="tiN-sj-WJC"/>
                         <outlet property="imageV" destination="BTP-4G-66w" id="IMT-ui-E8Z"/>
+                        <outlet property="maxL" destination="91b-gv-4mj" id="6GX-Kq-cBt"/>
                         <outlet property="maxS" destination="lG8-fp-BpB" id="AGM-ol-xv4"/>
+                        <outlet property="minL" destination="HSt-pg-bOq" id="LPt-f3-bqE"/>
                         <outlet property="minS" destination="dcy-OY-BoL" id="1gt-VN-49G"/>
                     </connections>
                 </viewController>

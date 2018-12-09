@@ -6,9 +6,9 @@
 //  Copyright © 2018年 綦帅鹏. All rights reserved.
 //
 
-#import "CIColorInvert.h"
+#import "CIColorInverte.h"
 
-@implementation CIColorInvert
+@implementation CIColorInverte
 
 - (CIImage *)outputImage {
     CIFilter *filter = [CIFilter filterWithName:@"CIColorMatrix"
