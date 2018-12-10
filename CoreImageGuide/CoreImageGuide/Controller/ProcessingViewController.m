@@ -47,9 +47,10 @@
 - (IBAction)addAction:(UIButton *)sender {
     CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"];
     [filter setValue:@(0.8) forKey:kCIInputIntensityKey];
-    [filter setValue:[[CIImage alloc] initWithImage:self.currentI] forKey:kCIInputImageKey];
+    CIImage *sourceI = [[CIImage alloc] initWithImage:self.currentI];
+    [filter setValue:sourceI forKey:kCIInputImageKey];
     CIContext *context = [CIContext context];
-    CGImageRef image = [context createCGImage:filter.outputImage fromRect:filter.outputImage.extent];
+    CGImageRef image = [context createCGImage:[filter.outputImage imageByCroppingToRect:sourceI.extent] fromRect:sourceI.extent];
     self.imageV.image = [UIImage imageWithCGImage:image];
     CGImageRelease(image);
 }
@@ -59,10 +60,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
-    UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
-    if (!image) {
-        image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    }
+    UIImage *image = picker.allowsEditing ? [info valueForKey:UIImagePickerControllerEditedImage] : [info valueForKey:UIImagePickerControllerOriginalImage];
     
     self.currentI = image;
     self.imageV.image = image;

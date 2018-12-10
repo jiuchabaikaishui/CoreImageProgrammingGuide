@@ -61,9 +61,13 @@
                 cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIChromaKey滤镜").detailSet(@"色度键控合成图像");
                 cellVM.segueIDSet(@"MainToChromaKey");
             });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIFaceVignette滤镜").detailSet(@"面部虚化");
+                cellVM.segueIDSet(@"MainToFaceVignette");
+            });
         });
     }
-    
+//
     return _tableViewVM;
 }
 

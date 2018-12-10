@@ -65,10 +65,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
-    UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
-    if (!image) {
-        image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    }
+    UIImage *image = picker.allowsEditing ? [info valueForKey:UIImagePickerControllerEditedImage] : [info valueForKey:UIImagePickerControllerOriginalImage];
     
     self.currentI = image;
     self.imageV.image = image;

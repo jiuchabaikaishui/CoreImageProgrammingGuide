@@ -43,15 +43,17 @@
         } else {
             if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
                 [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
-                    if (granted) {
-                        UIImagePickerController *nextCtr = [[UIImagePickerController alloc] init];
-                        nextCtr.allowsEditing = NO;
-                        nextCtr.delegate = controller;
-                        nextCtr.sourceType = UIImagePickerControllerSourceTypeCamera;
-                        [controller presentViewController:nextCtr animated:YES completion:nil];
-                    } else {
-                        [ConFunc openSetting];
-                    }
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        if (granted) {
+                            UIImagePickerController *nextCtr = [[UIImagePickerController alloc] init];
+                            nextCtr.allowsEditing = NO;
+                            nextCtr.delegate = controller;
+                            nextCtr.sourceType = UIImagePickerControllerSourceTypeCamera;
+                            [controller presentViewController:nextCtr animated:YES completion:nil];
+                        } else {
+                            [ConFunc openSetting];
+                        }
+                    });
                 }];
             } else {
                 UIAlertController *nextCtr = [UIAlertController alertControllerWithTitle:@"提示" message:@"该设备没有相机" preferredStyle:UIAlertControllerStyleAlert];
@@ -68,15 +70,17 @@
             [ConFunc openSetting];
         } else {
             [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                if (status == PHAuthorizationStatusAuthorized) {
-                    UIImagePickerController *nextCtr = [[UIImagePickerController alloc] init];
-                    nextCtr.allowsEditing = NO;
-                    nextCtr.delegate = controller;
-                    nextCtr.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-                    [controller presentViewController:nextCtr animated:YES completion:nil];
-                } else {
-                    [ConFunc openSetting];
-                }
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (status == PHAuthorizationStatusAuthorized) {
+                        UIImagePickerController *nextCtr = [[UIImagePickerController alloc] init];
+                        nextCtr.allowsEditing = NO;
+                        nextCtr.delegate = controller;
+                        nextCtr.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                        [controller presentViewController:nextCtr animated:YES completion:nil];
+                    } else {
+                        [ConFunc openSetting];
+                    }
+                });
             }];
         }
     }];

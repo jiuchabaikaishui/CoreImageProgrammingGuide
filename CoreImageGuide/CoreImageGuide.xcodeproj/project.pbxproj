@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4730639C1E53D51496BF3E70 /* libPods-CoreImageGuide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */; };
+		5C188BA721BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */; };
+		5C188BAB21BE605F0030FAEC /* 21E58PIC58i_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */; };
+		5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127C21BE83F50094E644 /* CIFaceVignette.m */; };
+		5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */; };
 		5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5C688C9121B4E404006D0CB2 /* 录屏480.mov */; };
 		5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C688C9421B4E443006D0CB2 /* VideoViewController.m */; };
 		5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61EA21AD37BB006B3486 /* AppDelegate.m */; };
@@ -67,14 +71,18 @@
 		5CB523ED21BA260900B499FA /* ColorInvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EC21BA260900B499FA /* ColorInvertViewController.m */; };
 		5CB523F021BA551000B499FA /* CIChromaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EF21BA551000B499FA /* CIChromaKey.m */; };
 		5CB523F321BA706000B499FA /* ChromaKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523F221BA706000B499FA /* ChromaKeyViewController.m */; };
-		5CB523F521BA787500B499FA /* 017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB523F421BA787500B499FA /* 017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg */; };
-		5CB523F721BA79C300B499FA /* 21E58PIC58i_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5CB523F621BA79C300B499FA /* 21E58PIC58i_1024.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		468D1FE811D368E3029D7940 /* Pods-CoreImageGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageGuide/Pods-CoreImageGuide.release.xcconfig"; sourceTree = "<group>"; };
 		47741C95533BEC9B59B70EB7 /* Pods-CoreImageGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreImageGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreImageGuide/Pods-CoreImageGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreImageGuide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2144026043-5a3b35ba01e59_articlex.jpeg"; sourceTree = "<group>"; };
+		5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21E58PIC58i_1024.jpg; sourceTree = "<group>"; };
+		5C4B127B21BE83F50094E644 /* CIFaceVignette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIFaceVignette.h; sourceTree = "<group>"; };
+		5C4B127C21BE83F50094E644 /* CIFaceVignette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFaceVignette.m; sourceTree = "<group>"; };
+		5C4B127E21BE87E60094E644 /* FaceVignetteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceVignetteViewController.h; sourceTree = "<group>"; };
+		5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceVignetteViewController.m; sourceTree = "<group>"; };
 		5C688C9121B4E404006D0CB2 /* 录屏480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "录屏480.mov"; sourceTree = "<group>"; };
 		5C688C9321B4E443006D0CB2 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5C688C9421B4E443006D0CB2 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
@@ -182,8 +190,6 @@
 		5CB523EF21BA551000B499FA /* CIChromaKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIChromaKey.m; sourceTree = "<group>"; };
 		5CB523F121BA706000B499FA /* ChromaKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromaKeyViewController.h; sourceTree = "<group>"; };
 		5CB523F221BA706000B499FA /* ChromaKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromaKeyViewController.m; sourceTree = "<group>"; };
-		5CB523F421BA787500B499FA /* 017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg"; sourceTree = "<group>"; };
-		5CB523F621BA79C300B499FA /* 21E58PIC58i_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21E58PIC58i_1024.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +312,8 @@
 				5CB523EC21BA260900B499FA /* ColorInvertViewController.m */,
 				5CB523F121BA706000B499FA /* ChromaKeyViewController.h */,
 				5CB523F221BA706000B499FA /* ChromaKeyViewController.m */,
+				5C4B127E21BE87E60094E644 /* FaceVignetteViewController.h */,
+				5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,8 +353,8 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5CB523F621BA79C300B499FA /* 21E58PIC58i_1024.jpg */,
-				5CB523F421BA787500B499FA /* 017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg */,
+				5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */,
+				5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */,
 				5CB523DA21B690CD00B499FA /* WechatIMG7.jpeg */,
 				5CB523D521B65CEC00B499FA /* timg.jpeg */,
 				5C688C9121B4E404006D0CB2 /* 录屏480.mov */,
@@ -464,6 +472,8 @@
 				5CB523E921BA1EEA00B499FA /* CIColorInverte.m */,
 				5CB523EE21BA551000B499FA /* CIChromaKey.h */,
 				5CB523EF21BA551000B499FA /* CIChromaKey.m */,
+				5C4B127B21BE83F50094E644 /* CIFaceVignette.h */,
+				5C4B127C21BE83F50094E644 /* CIFaceVignette.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -626,11 +636,11 @@
 				5CB523DB21B690CD00B499FA /* WechatIMG7.jpeg in Resources */,
 				5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */,
 				5CB523D621B65CED00B499FA /* timg.jpeg in Resources */,
+				5C188BA721BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
 				5CAB61F321AD37C2006B3486 /* Assets.xcassets in Resources */,
+				5C188BAB21BE605F0030FAEC /* 21E58PIC58i_1024.jpg in Resources */,
 				5CAB61F121AD37BB006B3486 /* Main.storyboard in Resources */,
-				5CB523F721BA79C300B499FA /* 21E58PIC58i_1024.jpg in Resources */,
-				5CB523F521BA787500B499FA /* 017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +710,8 @@
 				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
 				5CAB61F921AD37C2006B3486 /* main.m in Sources */,
+				5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */,
+				5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */,
 				5CB523E121B7A54B00B499FA /* QueryVM.m in Sources */,
 				5CAB624C21AD3971006B3486 /* QSPTableViewSectionVM.m in Sources */,
 				5CAB624721AD3971006B3486 /* QSPTableViewFooterView.m in Sources */,

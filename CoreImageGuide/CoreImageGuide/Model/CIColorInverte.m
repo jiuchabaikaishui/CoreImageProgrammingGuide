@@ -19,7 +19,7 @@
                                                    @"inputBVector": [CIVector vectorWithX:0 Y:0 Z:-1],
                                                    @"inputBiasVector": [CIVector vectorWithX:1 Y:1 Z:1],
                                                    }];
-    return filter.outputImage;
+    return [[filter.outputImage imageByClampingToExtent] imageByCroppingToRect:self.inputImage.extent];
 }
 
 @end

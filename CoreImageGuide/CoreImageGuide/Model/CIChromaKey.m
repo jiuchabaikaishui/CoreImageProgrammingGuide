@@ -34,11 +34,9 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
     *h *= 60;               // degrees
     if( *h < 0 )
         *h += 360;
-    
-    *h /= 360;
 }
 - (CIImage *)outputImage {
-    unsigned int size = 256;
+    unsigned int size = 64;
     float *cubeData = malloc(size*size*size*sizeof(float)*4);
     float rgb[3], hsv[3], *c = cubeData;
     for (int b = 0; b < size; b++) {
@@ -48,7 +46,7 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
             for (int r = 0; r < size; r++) {
                 rgb[0] = r/(double)size;
                 RGBtoHSV(rgb[0], rgb[1], rgb[2], hsv, hsv + 1, hsv + 2);
-                float alpha = hsv[0] > self.minHueAngle && hsv[0] < self.maxHueAngle ? 1.0f : 0.0f;
+                float alpha = hsv[0] > self.minHueAngle && hsv[0] < self.maxHueAngle ? 0.0f : 1.0f;
                 c[0] = rgb[0]*alpha;
                 c[1] = rgb[1]*alpha;
                 c[2] = rgb[2]*alpha;
@@ -60,9 +58,15 @@ static void RGBtoHSV( float r, float g, float b, float *h, float *s, float *v )
     
     NSData *data = [NSData dataWithBytesNoCopy:cubeData length:size*size*size*sizeof(float)*4 freeWhenDone:YES];
     CIFilter *filter = [CIFilter filterWithName:@"CIColorCube"];
+    [filter setValue:@(size) forKey:@"inputCubeDimension"];
     [filter setValue:data forKey:@"inputCubeData"];
     [filter setValue:self.inputImage forKey:kCIInputImageKey];
-    return filter.outputImage;
+    
+    CIFilter *compose = [CIFilter filterWithName:@"CISourceOverCompositing"];
+    [compose setValue:filter.outputImage forKey:kCIInputImageKey];
+    [compose setValue:self.backImage forKey:kCIInputBackgroundImageKey];
+    
+    return compose.outputImage;
 }
 
 @end

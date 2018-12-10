@@ -9,13 +9,18 @@
 #import "ChromaKeyViewController.h"
 #import "CIChromaKey.h"
 
-@interface ChromaKeyViewController ()
+typedef NS_ENUM(NSInteger, ChromaKeyViewControllerPictureType) {
+    ChromaKeyViewControllerPictureTypeFront = 0,
+    ChromaKeyViewControllerPictureTypeBack = 1
+};
+@interface ChromaKeyViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UISlider *minS;
 @property (weak, nonatomic) IBOutlet UISlider *maxS;
 @property (weak, nonatomic) IBOutlet UILabel *minL;
 @property (weak, nonatomic) IBOutlet UILabel *maxL;
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
 @property (weak, nonatomic) IBOutlet UIImageView *colorIV;
+@property (assign, nonatomic) ChromaKeyViewControllerPictureType type;
 
 @property (strong, nonatomic) UIImage *backImage;
 @property (strong, nonatomic) UIImage *frontImage;
@@ -28,7 +33,7 @@
     [super viewDidLoad];
     
     self.backImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"21E58PIC58i_1024" ofType:@"jpg"]];
-    self.frontImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"017ea858d26364a801219c77d07b5c.jpg@1280w_1l_2o_100sh" ofType:@"jpg"]];
+    self.frontImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"2144026043-5a3b35ba01e59_articlex" ofType:@"jpeg"]];
     [self updateImageV];
     
     CGSize size = self.colorIV.frame.size;
@@ -50,25 +55,39 @@
         });
     });
 }
-- (IBAction)backAction:(UIBarButtonItem *)sender {
-}
 - (IBAction)frontAction:(UIBarButtonItem *)sender {
+    self.type = ChromaKeyViewControllerPictureTypeFront;
+    [ConFunc cameraPhotoAlter:self removeAction:^{
+        self.frontImage = nil;
+        [self updateImageV];
+    }];
+}
+- (IBAction)backAction:(UIBarButtonItem *)sender {
+    self.type = ChromaKeyViewControllerPictureTypeBack;
+    [ConFunc cameraPhotoAlter:self removeAction:^{
+        self.backImage = nil;
+        [self updateImageV];
+    }];
+}
+- (IBAction)min:(UISlider *)sender {
+    [self updateImageV];
 }
 - (IBAction)minAction:(UISlider *)sender {
     if (self.maxS.value < sender.value) {
         [self.maxS setValue:sender.value animated:NO];
-        self.maxL.text = [NSString stringWithFormat:@"%.2f", sender.value];
+        self.maxL.text = [NSString stringWithFormat:@"%.0f", sender.value];
     }
-    self.minL.text = [NSString stringWithFormat:@"%.2f", sender.value];
+    self.minL.text = [NSString stringWithFormat:@"%.0f", sender.value];
+}
+- (IBAction)max:(UISlider *)sender {
     [self updateImageV];
 }
-- (IBAction)maxAtion:(UISlider *)sender {
+- (IBAction)maxAction:(UISlider *)sender {
     if (self.minS.value > sender.value) {
         [self.minS setValue:sender.value animated:NO];
-        self.minL.text = [NSString stringWithFormat:@"%.2f", sender.value];
+        self.minL.text = [NSString stringWithFormat:@"%.0f", sender.value];
     }
-    self.maxL.text = [NSString stringWithFormat:@"%.2f", sender.value];
-    [self updateImageV];
+    self.maxL.text = [NSString stringWithFormat:@"%.0f", sender.value];
 }
 
 - (void)updateImageV {
@@ -77,16 +96,36 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         CIChromaKey *filter = [[CIChromaKey alloc] init];
         filter.inputImage = [[CIImage alloc] initWithImage:self.frontImage];
+        filter.backImage = [[CIImage alloc] initWithImage:self.backImage];
         filter.minHueAngle = min;
         filter.maxHueAngle = max;
         CIContext *context = [CIContext context];
-        CGImageRef image = [context createCGImage:filter.outputImage fromRect:filter.outputImage.extent];
+        CIImage *output = filter.outputImage;
+        CGImageRef image = [context createCGImage:output fromRect:filter.backImage.extent];
         UIImage *endImage = [UIImage imageWithCGImage:image];
         CGImageRelease(image);
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imageV.image = endImage;
         });
     });
+}
+
+#pragma mark - <UINavigationControllerDelegate,UIImagePickerControllerDelegate>代理方法
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    UIImage *image = picker.allowsEditing ? [info valueForKey:UIImagePickerControllerEditedImage] : [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    if (self.type == ChromaKeyViewControllerPictureTypeFront) {
+        self.frontImage = image;
+        [self updateImageV];
+    } else if (self.type == ChromaKeyViewControllerPictureTypeBack) {
+        self.backImage = image;
+        [self updateImageV];
+    }
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

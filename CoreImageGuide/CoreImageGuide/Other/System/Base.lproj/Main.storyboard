@@ -44,6 +44,7 @@
                         <segue destination="MtP-l8-9Cg" kind="show" identifier="MainToQuery" id="Vug-OT-gMI"/>
                         <segue destination="MlP-bi-X6r" kind="show" identifier="MainToInvert" id="OsK-b5-81v"/>
                         <segue destination="hmG-c4-Unc" kind="show" identifier="MainToChromaKey" id="eE4-Dr-n9n"/>
+                        <segue destination="Qdf-x9-QOv" kind="show" identifier="MainToFaceVignette" id="MEg-A6-dUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,6 +133,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVI-dx-ch6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1236" y="948.57571214392806"/>
+        </scene>
+        <!--面部虚化-->
+        <scene sceneID="PvF-CF-iTS">
+            <objects>
+                <viewController id="Qdf-x9-QOv" customClass="FaceVignetteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ocj-iQ-bBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2144026043-5a3b35ba01e59_articlex.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aIv-Pq-x44">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aIv-Pq-x44" firstAttribute="leading" secondItem="Qhl-Mh-tc9" secondAttribute="leading" id="7fb-8X-btO"/>
+                            <constraint firstItem="aIv-Pq-x44" firstAttribute="bottom" secondItem="Qhl-Mh-tc9" secondAttribute="bottom" id="JKt-p5-tOJ"/>
+                            <constraint firstItem="aIv-Pq-x44" firstAttribute="trailing" secondItem="Qhl-Mh-tc9" secondAttribute="trailing" id="LcQ-CW-p1L"/>
+                            <constraint firstItem="aIv-Pq-x44" firstAttribute="top" secondItem="Qhl-Mh-tc9" secondAttribute="top" id="cGO-8t-Vdp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qhl-Mh-tc9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="面部虚化" id="4ge-Yd-ohy">
+                        <barButtonItem key="rightBarButtonItem" title="图片" id="RBW-nU-np0">
+                            <connections>
+                                <action selector="pictureAction:" destination="Qdf-x9-QOv" id="8i0-9Q-tqa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageV" destination="aIv-Pq-x44" id="kc1-zs-Ktw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAI-RW-yS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="958.4707646176912"/>
         </scene>
         <!--Metal渲染图片滤镜-->
         <scene sceneID="MBY-eP-eef">
@@ -415,20 +452,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lG8-fp-BpB">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="140" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="lG8-fp-BpB">
                                 <rect key="frame" x="92" y="617" width="221" height="31"/>
                                 <connections>
-                                    <action selector="maxAtion:" destination="hmG-c4-Unc" eventType="valueChanged" id="J4z-5d-nfr"/>
+                                    <action selector="max:" destination="hmG-c4-Unc" eventType="touchUpInside" id="L8d-B5-mfV"/>
+                                    <action selector="maxAction:" destination="hmG-c4-Unc" eventType="valueChanged" id="roI-bY-gR0"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最小值：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-kd-Vbi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最大值：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-kd-Vbi">
                                 <rect key="frame" x="16" y="626" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91b-gv-4mj">
-                                <rect key="frame" x="319" y="626" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91b-gv-4mj">
+                                <rect key="frame" x="319" y="626.5" width="40" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="iVJ-nQ-vKX"/>
                                 </constraints>
@@ -436,10 +474,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-OY-BoL">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-OY-BoL">
                                 <rect key="frame" x="92" y="551" width="221" height="31"/>
                                 <connections>
-                                    <action selector="minAction:" destination="hmG-c4-Unc" eventType="valueChanged" id="KjN-BR-0sw"/>
+                                    <action selector="min:" destination="hmG-c4-Unc" eventType="touchUpInside" id="bgy-wO-N74"/>
+                                    <action selector="minAction:" destination="hmG-c4-Unc" eventType="valueChanged" id="8tS-4u-J9c"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最小值：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-QZ-fhf">
@@ -448,7 +487,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-pg-bOq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-pg-bOq">
                                 <rect key="frame" x="319" y="560" width="40" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="1Ne-D2-gSM"/>
@@ -583,6 +622,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2144026043-5a3b35ba01e59_articlex.jpeg" width="533" height="800"/>
         <image name="WechatIMG4.jpeg" width="1079" height="1618"/>
         <image name="WechatIMG7.jpeg" width="720" height="1280"/>
         <image name="timg.jpeg" width="1200" height="800"/>

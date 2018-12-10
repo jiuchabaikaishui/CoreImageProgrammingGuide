@@ -55,17 +55,19 @@
     CGImageRelease(image);
 }
 - (IBAction)bloomAction:(UIButton *)sender {
-    CIFilter *filter = [CIFilter filterWithName:@"CIBloom" withInputParameters:@{kCIInputImageKey: [[CIImage alloc] initWithImage:self.currentI], kCIInputRadiusKey: @(10), kCIInputIntensityKey: @(1.0)}];
+    CIImage *sourceI = [[CIImage alloc] initWithImage:self.currentI];
+    CIFilter *filter = [CIFilter filterWithName:@"CIBloom" withInputParameters:@{kCIInputImageKey:sourceI.imageByClampingToExtent, kCIInputRadiusKey: @(10), kCIInputIntensityKey: @(1)}];
     CIContext *context = [CIContext context];
-    CGImageRef image = [context createCGImage:filter.outputImage fromRect:filter.outputImage.extent];
+    CGImageRef image = [context createCGImage:[filter.outputImage imageByCroppingToRect:sourceI.extent] fromRect:sourceI.extent];
     self.imageV.image = [UIImage imageWithCGImage:image];
     CGImageRelease(image);
 }
 - (IBAction)combine:(UIButton *)sender {
-    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectProcess" withInputParameters:@{kCIInputImageKey: [[CIImage alloc] initWithImage:self.currentI]}];
-    CIImage *ciImage = [filter.outputImage imageByApplyingFilter:@"CIBloom" withInputParameters:@{kCIInputRadiusKey: @(10), kCIInputIntensityKey: @(1.0)}];
+    CIImage *sourceI = [[CIImage alloc] initWithImage:self.currentI];
+    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectProcess" withInputParameters:@{kCIInputImageKey: sourceI}];
+    CIImage *ciImage = [filter.outputImage.imageByClampingToExtent imageByApplyingFilter:@"CIBloom" withInputParameters:@{kCIInputRadiusKey: @(10), kCIInputIntensityKey: @(1.0)}];
     CIContext *context = [CIContext context];
-    CGImageRef image = [context createCGImage:ciImage fromRect:ciImage.extent];
+    CGImageRef image = [context createCGImage:[ciImage imageByCroppingToRect:sourceI.extent] fromRect:sourceI.extent];
     self.imageV.image = [UIImage imageWithCGImage:image];
     CGImageRelease(image);
 }
@@ -75,10 +77,7 @@
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
-    UIImage *image = [info valueForKey:UIImagePickerControllerEditedImage];
-    if (!image) {
-        image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    }
+    UIImage *image = picker.allowsEditing ? [info valueForKey:UIImagePickerControllerEditedImage] : [info valueForKey:UIImagePickerControllerOriginalImage];
     
     self.currentI = image;
     self.imageV.image = image;

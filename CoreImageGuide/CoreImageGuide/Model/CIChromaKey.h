@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CIChromaKey : CIFilter
 
 @property (strong, nonatomic) CIImage *inputImage;
+@property (strong, nonatomic) CIImage *backImage;
 @property (assign, nonatomic) float minHueAngle;
 @property (assign, nonatomic) float maxHueAngle;
 
