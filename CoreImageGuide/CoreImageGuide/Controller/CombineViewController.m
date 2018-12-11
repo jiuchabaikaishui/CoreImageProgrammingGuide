@@ -39,10 +39,10 @@
 
 #pragma mark - 触摸点击方法
 - (IBAction)pictureAction:(UIBarButtonItem *)sender {
-    [ConFunc cameraPhotoAlter:self removeAction:^{
+    [ConFunc cameraPhotoAlter:self removeAction:self.currentI ? ^{
         self.currentI = nil;
         self.imageV.image = nil;
-    }];
+    } : nil];
 }
 - (IBAction)resetAction:(UIButton *)sender {
     self.imageV.image = self.currentI;

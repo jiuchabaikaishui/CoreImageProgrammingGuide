@@ -23,9 +23,9 @@
 }
 
 - (IBAction)pictureAction:(UIBarButtonItem *)sender {
-    [ConFunc cameraPhotoAlter:self removeAction:^{
+    [ConFunc cameraPhotoAlter:self removeAction:self.imageV.image ? ^{
         self.imageV.image = nil;
-    }];
+    } : nil];
 }
 - (void)updateImageV {
     CIImage *sourceI = [[CIImage alloc] initWithImage:self.imageV.image];

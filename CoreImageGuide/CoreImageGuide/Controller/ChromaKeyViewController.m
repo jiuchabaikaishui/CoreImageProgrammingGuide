@@ -57,17 +57,17 @@ typedef NS_ENUM(NSInteger, ChromaKeyViewControllerPictureType) {
 }
 - (IBAction)frontAction:(UIBarButtonItem *)sender {
     self.type = ChromaKeyViewControllerPictureTypeFront;
-    [ConFunc cameraPhotoAlter:self removeAction:^{
+    [ConFunc cameraPhotoAlter:self removeAction:self.frontImage ? ^{
         self.frontImage = nil;
         [self updateImageV];
-    }];
+    } : nil];
 }
 - (IBAction)backAction:(UIBarButtonItem *)sender {
     self.type = ChromaKeyViewControllerPictureTypeBack;
-    [ConFunc cameraPhotoAlter:self removeAction:^{
+    [ConFunc cameraPhotoAlter:self removeAction:self.backImage ? ^{
         self.backImage = nil;
         [self updateImageV];
-    }];
+    } : nil];
 }
 - (IBAction)min:(UISlider *)sender {
     [self updateImageV];

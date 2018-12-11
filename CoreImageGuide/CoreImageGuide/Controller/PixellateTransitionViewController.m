@@ -29,7 +29,6 @@
     [self updateImageV];
     
     [[RACObserve(self, time) throttle:0.1] subscribeNext:^(id  _Nullable x) {
-        DebugLog(@"time: %@", [x stringValue]);
         [self updateImageV];
     }];
 }
