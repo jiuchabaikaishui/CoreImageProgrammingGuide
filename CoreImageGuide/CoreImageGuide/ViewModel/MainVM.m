@@ -65,6 +65,18 @@
                 cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIFaceVignette滤镜").detailSet(@"面部虚化");
                 cellVM.segueIDSet(@"MainToFaceVignette");
             });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CILinearFocus滤镜").detailSet(@"线性聚焦");
+                cellVM.segueIDSet(@"MainToFocus");
+            });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIAnonymousFaces滤镜").detailSet(@"面部马赛克");
+                cellVM.segueIDSet(@"MainToAnonymous");
+            });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIPixellateTransition滤镜").detailSet(@"马赛克过渡");
+                cellVM.segueIDSet(@"MainToPixellateTransition");
+            });
         });
     }
 //

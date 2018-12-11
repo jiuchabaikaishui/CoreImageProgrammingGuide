@@ -12,6 +12,12 @@
 		5C188BAB21BE605F0030FAEC /* 21E58PIC58i_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */; };
 		5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127C21BE83F50094E644 /* CIFaceVignette.m */; };
 		5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */; };
+		5C4B128321BF533C0094E644 /* CILinearFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B128221BF533C0094E644 /* CILinearFocus.m */; };
+		5C4B128621BF53840094E644 /* LinearFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B128521BF53840094E644 /* LinearFocusViewController.m */; };
+		5C4B128921BF65410094E644 /* AnonymousFacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B128821BF65410094E644 /* AnonymousFacesViewController.m */; };
+		5C4B128F21BF6AFF0094E644 /* CIAnonymousFaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B128E21BF6AFF0094E644 /* CIAnonymousFaces.m */; };
+		5C4B129221BF8E290094E644 /* CIPixellateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129121BF8E290094E644 /* CIPixellateTransition.m */; };
+		5C4B129521BFA7DE0094E644 /* PixellateTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */; };
 		5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5C688C9121B4E404006D0CB2 /* 录屏480.mov */; };
 		5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C688C9421B4E443006D0CB2 /* VideoViewController.m */; };
 		5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61EA21AD37BB006B3486 /* AppDelegate.m */; };
@@ -83,6 +89,18 @@
 		5C4B127C21BE83F50094E644 /* CIFaceVignette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFaceVignette.m; sourceTree = "<group>"; };
 		5C4B127E21BE87E60094E644 /* FaceVignetteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceVignetteViewController.h; sourceTree = "<group>"; };
 		5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceVignetteViewController.m; sourceTree = "<group>"; };
+		5C4B128121BF533C0094E644 /* CILinearFocus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CILinearFocus.h; sourceTree = "<group>"; };
+		5C4B128221BF533C0094E644 /* CILinearFocus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CILinearFocus.m; sourceTree = "<group>"; };
+		5C4B128421BF53840094E644 /* LinearFocusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearFocusViewController.h; sourceTree = "<group>"; };
+		5C4B128521BF53840094E644 /* LinearFocusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearFocusViewController.m; sourceTree = "<group>"; };
+		5C4B128721BF65410094E644 /* AnonymousFacesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnonymousFacesViewController.h; sourceTree = "<group>"; };
+		5C4B128821BF65410094E644 /* AnonymousFacesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnonymousFacesViewController.m; sourceTree = "<group>"; };
+		5C4B128D21BF6AFF0094E644 /* CIAnonymousFaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIAnonymousFaces.h; sourceTree = "<group>"; };
+		5C4B128E21BF6AFF0094E644 /* CIAnonymousFaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIAnonymousFaces.m; sourceTree = "<group>"; };
+		5C4B129021BF8E290094E644 /* CIPixellateTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIPixellateTransition.h; sourceTree = "<group>"; };
+		5C4B129121BF8E290094E644 /* CIPixellateTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIPixellateTransition.m; sourceTree = "<group>"; };
+		5C4B129321BFA7DE0094E644 /* PixellateTransitionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixellateTransitionViewController.h; sourceTree = "<group>"; };
+		5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixellateTransitionViewController.m; sourceTree = "<group>"; };
 		5C688C9121B4E404006D0CB2 /* 录屏480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "录屏480.mov"; sourceTree = "<group>"; };
 		5C688C9321B4E443006D0CB2 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5C688C9421B4E443006D0CB2 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
@@ -314,6 +332,12 @@
 				5CB523F221BA706000B499FA /* ChromaKeyViewController.m */,
 				5C4B127E21BE87E60094E644 /* FaceVignetteViewController.h */,
 				5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */,
+				5C4B128421BF53840094E644 /* LinearFocusViewController.h */,
+				5C4B128521BF53840094E644 /* LinearFocusViewController.m */,
+				5C4B128721BF65410094E644 /* AnonymousFacesViewController.h */,
+				5C4B128821BF65410094E644 /* AnonymousFacesViewController.m */,
+				5C4B129321BFA7DE0094E644 /* PixellateTransitionViewController.h */,
+				5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -474,6 +498,12 @@
 				5CB523EF21BA551000B499FA /* CIChromaKey.m */,
 				5C4B127B21BE83F50094E644 /* CIFaceVignette.h */,
 				5C4B127C21BE83F50094E644 /* CIFaceVignette.m */,
+				5C4B128121BF533C0094E644 /* CILinearFocus.h */,
+				5C4B128221BF533C0094E644 /* CILinearFocus.m */,
+				5C4B128D21BF6AFF0094E644 /* CIAnonymousFaces.h */,
+				5C4B128E21BF6AFF0094E644 /* CIAnonymousFaces.m */,
+				5C4B129021BF8E290094E644 /* CIPixellateTransition.h */,
+				5C4B129121BF8E290094E644 /* CIPixellateTransition.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -699,10 +729,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4B128F21BF6AFF0094E644 /* CIAnonymousFaces.m in Sources */,
 				5CAB625A21AE4753006B3486 /* ProcessingViewController.m in Sources */,
 				5CB523E721B7B8E400B499FA /* CommonTableViewCellVM.m in Sources */,
 				5CAB623C21AD3971006B3486 /* BaseM.m in Sources */,
+				5C4B129521BFA7DE0094E644 /* PixellateTransitionViewController.m in Sources */,
 				5CAB624B21AD3971006B3486 /* QSPTableViewCellVM.m in Sources */,
+				5C4B129221BF8E290094E644 /* CIPixellateTransition.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
 				5CAB624821AD3971006B3486 /* QSPTableViewHeaderView.m in Sources */,
 				5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */,
@@ -713,6 +746,7 @@
 				5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */,
 				5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */,
 				5CB523E121B7A54B00B499FA /* QueryVM.m in Sources */,
+				5C4B128321BF533C0094E644 /* CILinearFocus.m in Sources */,
 				5CAB624C21AD3971006B3486 /* QSPTableViewSectionVM.m in Sources */,
 				5CAB624721AD3971006B3486 /* QSPTableViewFooterView.m in Sources */,
 				5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */,
@@ -722,6 +756,7 @@
 				5CAB623D21AD3971006B3486 /* CommonM.m in Sources */,
 				5CAB625421AD424D006B3486 /* MainTableViewCellVM.m in Sources */,
 				5CB523ED21BA260900B499FA /* ColorInvertViewController.m in Sources */,
+				5C4B128621BF53840094E644 /* LinearFocusViewController.m in Sources */,
 				5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */,
 				5CB523F321BA706000B499FA /* ChromaKeyViewController.m in Sources */,
 				5CB523F021BA551000B499FA /* CIChromaKey.m in Sources */,
@@ -734,6 +769,7 @@
 				5CAB624421AD3971006B3486 /* UITableView+QSPMVVM.m in Sources */,
 				5CB523D421B65B8400B499FA /* FaceViewController.m in Sources */,
 				5CAB624021AD3971006B3486 /* CommonTableViewHeaderView.m in Sources */,
+				5C4B128921BF65410094E644 /* AnonymousFacesViewController.m in Sources */,
 				5CB523DE21B77F8000B499FA /* QueryViewController.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
 				5CB523E621B7B8E400B499FA /* CommonTableViewSectionVM.m in Sources */,

@@ -29,10 +29,6 @@
         if (features && features.count > 0) {
             CIFeature *feature = [features firstObject];
             
-            DebugLog(@"-----------------");
-            DebugLog(@"%@", NSStringFromCGRect(self.inputImage.extent));
-            DebugLog(@"%@", NSStringFromCGRect(feature.bounds));
-            
             CIFilter *filter = [CIFilter filterWithName:@"CIRadialGradient"];
             [filter setValue:@((self.inputImage.extent.size.width > self.inputImage.extent.size.height ? self.inputImage.extent.size.width : self.inputImage.extent.size.height) + self.edgeOffset) forKey:@"inputRadius0"];
             [filter setValue:@(feature.bounds.size.height + self.faceOffset) forKey:@"inputRadius1"];
