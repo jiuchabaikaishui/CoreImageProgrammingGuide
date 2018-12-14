@@ -25,7 +25,7 @@
     [super viewDidLoad];
     
     self.currentI = self.imageV.image;
-    self.queue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_SERIAL);
+    self.queue = dispatch_queue_create("PixellateTransitionQueue", DISPATCH_QUEUE_SERIAL);
     [self updateImageV];
     
     [[RACObserve(self, time) throttle:0.1] subscribeNext:^(id  _Nullable x) {

@@ -77,6 +77,10 @@
                 cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIPixellateTransition滤镜").detailSet(@"马赛克过渡");
                 cellVM.segueIDSet(@"MainToPixellateTransition");
             });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"创建CIOldFilm滤镜").detailSet(@"老胶片效果");
+                cellVM.segueIDSet(@"MainToOldFilm");
+            });
         });
     }
 //

@@ -19,6 +19,7 @@
 		5C4B129221BF8E290094E644 /* CIPixellateTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129121BF8E290094E644 /* CIPixellateTransition.m */; };
 		5C4B129521BFA7DE0094E644 /* PixellateTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */; };
 		5C4B129821BFCC020094E644 /* CIOldFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129721BFCC020094E644 /* CIOldFilm.m */; };
+		5C4B129B21C0B95A0094E644 /* OldFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */; };
 		5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5C688C9121B4E404006D0CB2 /* 录屏480.mov */; };
 		5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C688C9421B4E443006D0CB2 /* VideoViewController.m */; };
 		5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61EA21AD37BB006B3486 /* AppDelegate.m */; };
@@ -104,6 +105,8 @@
 		5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixellateTransitionViewController.m; sourceTree = "<group>"; };
 		5C4B129621BFCC020094E644 /* CIOldFilm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIOldFilm.h; sourceTree = "<group>"; };
 		5C4B129721BFCC020094E644 /* CIOldFilm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIOldFilm.m; sourceTree = "<group>"; };
+		5C4B129921C0B95A0094E644 /* OldFilmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldFilmViewController.h; sourceTree = "<group>"; };
+		5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldFilmViewController.m; sourceTree = "<group>"; };
 		5C688C9121B4E404006D0CB2 /* 录屏480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "录屏480.mov"; sourceTree = "<group>"; };
 		5C688C9321B4E443006D0CB2 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5C688C9421B4E443006D0CB2 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				5C4B128821BF65410094E644 /* AnonymousFacesViewController.m */,
 				5C4B129321BFA7DE0094E644 /* PixellateTransitionViewController.h */,
 				5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */,
+				5C4B129921C0B95A0094E644 /* OldFilmViewController.h */,
+				5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -756,6 +761,7 @@
 				5CAB624721AD3971006B3486 /* QSPTableViewFooterView.m in Sources */,
 				5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */,
 				5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */,
+				5C4B129B21C0B95A0094E644 /* OldFilmViewController.m in Sources */,
 				5CAB623F21AD3971006B3486 /* CommonTableViewCell.m in Sources */,
 				5CAB624A21AD3971006B3486 /* QSPScrollViewVM.m in Sources */,
 				5CAB623D21AD3971006B3486 /* CommonM.m in Sources */,

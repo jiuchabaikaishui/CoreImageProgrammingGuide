@@ -41,6 +41,7 @@
                             NSDictionary *attributes = [filter attributes];
                             id detail = attributes[kCIAttributeFilterDisplayName];
                             cellVM.styleSet(UITableViewCellStyleSubtitle).titleSet(name).detailSet(detail);
+                            DebugLog(@"\n--------------------%@:\n%@", name, attributes);
                         });
                     } else {
                         DebugLog(@"\n----不能创建%@滤镜----", name);

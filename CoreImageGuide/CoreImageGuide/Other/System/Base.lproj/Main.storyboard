@@ -48,6 +48,7 @@
                         <segue destination="V2O-ih-xHD" kind="show" identifier="MainToFocus" id="l4c-9a-pX4"/>
                         <segue destination="Tj5-gM-W2u" kind="show" identifier="MainToAnonymous" id="c52-uo-wb0"/>
                         <segue destination="N7g-G8-sjP" kind="show" identifier="MainToPixellateTransition" id="L9W-dp-BeC"/>
+                        <segue destination="uQf-w3-und" kind="show" identifier="MainToOldFilm" id="PpD-Uo-mFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -374,6 +375,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Gm-jC-hL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1956" y="-528.48575712143929"/>
+        </scene>
+        <!--老胶片-->
+        <scene sceneID="eFA-LC-PbS">
+            <objects>
+                <viewController id="uQf-w3-und" customClass="OldFilmViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUY-Kp-mbb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG7.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="iHN-ms-Mbl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iHN-ms-Mbl" firstAttribute="trailing" secondItem="o00-2e-91q" secondAttribute="trailing" id="mIN-gh-Yrv"/>
+                            <constraint firstItem="iHN-ms-Mbl" firstAttribute="top" secondItem="o00-2e-91q" secondAttribute="top" id="nIw-iz-DB6"/>
+                            <constraint firstItem="iHN-ms-Mbl" firstAttribute="leading" secondItem="o00-2e-91q" secondAttribute="leading" id="pV9-lj-VUN"/>
+                            <constraint firstItem="iHN-ms-Mbl" firstAttribute="bottom" secondItem="o00-2e-91q" secondAttribute="bottom" id="q5O-ic-IGU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o00-2e-91q"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="老胶片" id="ejo-vF-JTF">
+                        <barButtonItem key="rightBarButtonItem" title="图片" id="47o-Bo-rSv">
+                            <connections>
+                                <action selector="pictureAction:" destination="uQf-w3-und" id="KvJ-6U-hG2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageV" destination="iHN-ms-Mbl" id="JoP-2N-R4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddC-nV-CHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.5999999999999" y="-528.48575712143929"/>
         </scene>
         <!--滤镜基本使用-->
         <scene sceneID="lJL-5Y-Ri6">
