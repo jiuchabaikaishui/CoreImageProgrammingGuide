@@ -79,6 +79,10 @@
 		5CB523ED21BA260900B499FA /* ColorInvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EC21BA260900B499FA /* ColorInvertViewController.m */; };
 		5CB523F021BA551000B499FA /* CIChromaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523EF21BA551000B499FA /* CIChromaKey.m */; };
 		5CB523F321BA706000B499FA /* ChromaKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB523F221BA706000B499FA /* ChromaKeyViewController.m */; };
+		5CDF8BAC21EC69FC00FA866B /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BA521EC69FC00FA866B /* UIImage+Common.m */; };
+		5CDF8BAD21EC69FC00FA866B /* UIImage+CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BA721EC69FC00FA866B /* UIImage+CommonUtils.m */; };
+		5CDF8BAE21EC69FC00FA866B /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BA921EC69FC00FA866B /* UIView+Common.m */; };
+		5CDF8BAF21EC69FC00FA866B /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BAB21EC69FC00FA866B /* UIViewController+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,6 +218,14 @@
 		5CB523EF21BA551000B499FA /* CIChromaKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIChromaKey.m; sourceTree = "<group>"; };
 		5CB523F121BA706000B499FA /* ChromaKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromaKeyViewController.h; sourceTree = "<group>"; };
 		5CB523F221BA706000B499FA /* ChromaKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromaKeyViewController.m; sourceTree = "<group>"; };
+		5CDF8BA421EC69FC00FA866B /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		5CDF8BA521EC69FC00FA866B /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		5CDF8BA621EC69FC00FA866B /* UIImage+CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonUtils.h"; sourceTree = "<group>"; };
+		5CDF8BA721EC69FC00FA866B /* UIImage+CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonUtils.m"; sourceTree = "<group>"; };
+		5CDF8BA821EC69FC00FA866B /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		5CDF8BA921EC69FC00FA866B /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		5CDF8BAA21EC69FC00FA866B /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
+		5CDF8BAB21EC69FC00FA866B /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,6 +438,7 @@
 		5CAB621D21AD3971006B3486 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5CDF8BA321EC69FC00FA866B /* UIKitCommon */,
 				5CAB621E21AD3971006B3486 /* QSPMVVM */,
 			);
 			path = Tools;
@@ -553,6 +566,21 @@
 				5CB523A221B5201200B499FA /* main.m */,
 			);
 			path = SceneKitUseCoreImage;
+			sourceTree = "<group>";
+		};
+		5CDF8BA321EC69FC00FA866B /* UIKitCommon */ = {
+			isa = PBXGroup;
+			children = (
+				5CDF8BA421EC69FC00FA866B /* UIImage+Common.h */,
+				5CDF8BA521EC69FC00FA866B /* UIImage+Common.m */,
+				5CDF8BA621EC69FC00FA866B /* UIImage+CommonUtils.h */,
+				5CDF8BA721EC69FC00FA866B /* UIImage+CommonUtils.m */,
+				5CDF8BA821EC69FC00FA866B /* UIView+Common.h */,
+				5CDF8BA921EC69FC00FA866B /* UIView+Common.m */,
+				5CDF8BAA21EC69FC00FA866B /* UIViewController+Common.h */,
+				5CDF8BAB21EC69FC00FA866B /* UIViewController+Common.m */,
+			);
+			path = UIKitCommon;
 			sourceTree = "<group>";
 		};
 		96A488BE33F22152D2F05ED3 /* Frameworks */ = {
@@ -746,11 +774,13 @@
 				5C4B129521BFA7DE0094E644 /* PixellateTransitionViewController.m in Sources */,
 				5CAB624B21AD3971006B3486 /* QSPTableViewCellVM.m in Sources */,
 				5C4B129221BF8E290094E644 /* CIPixellateTransition.m in Sources */,
+				5CDF8BAE21EC69FC00FA866B /* UIView+Common.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
 				5CAB624821AD3971006B3486 /* QSPTableViewHeaderView.m in Sources */,
 				5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */,
 				5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */,
 				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
+				5CDF8BAF21EC69FC00FA866B /* UIViewController+Common.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
 				5CAB61F921AD37C2006B3486 /* main.m in Sources */,
 				5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */,
@@ -761,6 +791,7 @@
 				5CAB624721AD3971006B3486 /* QSPTableViewFooterView.m in Sources */,
 				5CAB624E21AD3971006B3486 /* QSPViewVM.m in Sources */,
 				5CAB625121AD3F4D006B3486 /* MainVM.m in Sources */,
+				5CDF8BAD21EC69FC00FA866B /* UIImage+CommonUtils.m in Sources */,
 				5C4B129B21C0B95A0094E644 /* OldFilmViewController.m in Sources */,
 				5CAB623F21AD3971006B3486 /* CommonTableViewCell.m in Sources */,
 				5CAB624A21AD3971006B3486 /* QSPScrollViewVM.m in Sources */,
@@ -770,6 +801,7 @@
 				5CB523ED21BA260900B499FA /* ColorInvertViewController.m in Sources */,
 				5C4B128621BF53840094E644 /* LinearFocusViewController.m in Sources */,
 				5CAB624121AD3971006B3486 /* BaseViewControllerVM.m in Sources */,
+				5CDF8BAC21EC69FC00FA866B /* UIImage+Common.m in Sources */,
 				5CB523F321BA706000B499FA /* ChromaKeyViewController.m in Sources */,
 				5CB523F021BA551000B499FA /* CIChromaKey.m in Sources */,
 				5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */,

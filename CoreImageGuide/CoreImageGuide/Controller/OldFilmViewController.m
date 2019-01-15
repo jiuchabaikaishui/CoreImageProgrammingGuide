@@ -9,7 +9,7 @@
 #import "OldFilmViewController.h"
 #import "CIOldFilm.h"
 
-@interface OldFilmViewController ()
+@interface OldFilmViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
 @property (strong, nonatomic) UIImage *currentI;
 @property (assign, nonatomic) CIOldFilmType type;
@@ -27,14 +27,9 @@
     [self updateImageV];
 }
 - (IBAction)pictureAction:(UIBarButtonItem *)sender {
-    if (self.type == CIOldFilmTypeRandom) {
-        self.type = CIOldFilmTypeMatrix;
-    } else if (self.type == CIOldFilmTypeMatrix) {
-        self.type = CIOldFilmTypeRandom;
-    }
-    
-    
-    [self updateImageV];
+    [ConFunc cameraPhotoAlter:self removeAction:self.imageV.image ? ^{
+        self.imageV.image = nil;
+    } : nil];
 }
 - (void)updateImageV {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -50,6 +45,19 @@
             self.imageV.image = endImage;
         });
     });
+}
+
+#pragma mark - <UINavigationControllerDelegate,UIImagePickerControllerDelegate>代理方法
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    UIImage *image = picker.allowsEditing ? [info valueForKey:UIImagePickerControllerEditedImage] : [info valueForKey:UIImagePickerControllerOriginalImage];
+    
+    self.currentI = image;
+    [self updateImageV];
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

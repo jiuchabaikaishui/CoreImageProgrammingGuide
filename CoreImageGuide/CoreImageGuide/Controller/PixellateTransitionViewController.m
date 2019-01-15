@@ -28,7 +28,9 @@
     self.queue = dispatch_queue_create("PixellateTransitionQueue", DISPATCH_QUEUE_SERIAL);
     [self updateImageV];
     
+    @weakify(self);
     [[RACObserve(self, time) throttle:0.1] subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
         [self updateImageV];
     }];
 }
