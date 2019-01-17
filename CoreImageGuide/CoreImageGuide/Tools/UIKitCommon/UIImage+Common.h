@@ -63,6 +63,18 @@
  @param completedB 完成block
  */
 + (void)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)radius completed:(void (^)(UIImage *image))completedB;
+
+/**
+ 生成圆角颜色图像
+ 
+ @param color 颜色
+ @param size 尺寸
+ @param radius 圆角
+ @param strokeC 描边颜色
+ @param strokeW 描边宽度
+ @param completedB 完成block
+ */
++ (void)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)radius strokeColor:(UIColor *)strokeC strokeWidth:(CGFloat)strokeW completed:(void (^)(UIImage *image))completedB;
 /**
  生成图像
 

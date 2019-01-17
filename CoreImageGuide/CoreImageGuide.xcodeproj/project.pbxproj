@@ -83,6 +83,7 @@
 		5CDF8BAD21EC69FC00FA866B /* UIImage+CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BA721EC69FC00FA866B /* UIImage+CommonUtils.m */; };
 		5CDF8BAE21EC69FC00FA866B /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BA921EC69FC00FA866B /* UIView+Common.m */; };
 		5CDF8BAF21EC69FC00FA866B /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BAB21EC69FC00FA866B /* UIViewController+Common.m */; };
+		5CDF8BB221EDCAF400FA866B /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF8BB121EDCAF300FA866B /* FeedbackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,6 +227,8 @@
 		5CDF8BA921EC69FC00FA866B /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		5CDF8BAA21EC69FC00FA866B /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		5CDF8BAB21EC69FC00FA866B /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
+		5CDF8BB021EDCAF300FA866B /* FeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		5CDF8BB121EDCAF300FA866B /* FeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +361,8 @@
 				5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */,
 				5C4B129921C0B95A0094E644 /* OldFilmViewController.h */,
 				5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */,
+				5CDF8BB021EDCAF300FA866B /* FeedbackViewController.h */,
+				5CDF8BB121EDCAF300FA866B /* FeedbackViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -817,6 +822,7 @@
 				5CB523DE21B77F8000B499FA /* QueryViewController.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
 				5CB523E621B7B8E400B499FA /* CommonTableViewSectionVM.m in Sources */,
+				5CDF8BB221EDCAF400FA866B /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

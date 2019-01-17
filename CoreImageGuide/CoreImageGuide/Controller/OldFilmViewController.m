@@ -8,6 +8,7 @@
 
 #import "OldFilmViewController.h"
 #import "CIOldFilm.h"
+#import <OpenGLES/OpenGLESAvailability.h>
 
 @interface OldFilmViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;

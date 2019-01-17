@@ -45,10 +45,32 @@
     }];
 }
 + (void)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)radius completed:(void (^)(UIImage *image))completedB {
+    [self imageWithColor:color size:size cornerRadius:radius strokeColor:nil strokeWidth:0 completed:completedB];
     [self genarateImageWithSize:size draw:^(CGSize size, CGContextRef context) {
         UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:(CGRect){{0, 0}, size} cornerRadius:radius];
         [color setFill];
+        [color setStroke];
         [path fill];
+    } completed:^(UIImage *image) {
+        if (completedB) {
+            completedB(image);
+        }
+    }];
+}
++ (void)imageWithColor:(UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)radius strokeColor:(UIColor *)strokeC strokeWidth:(CGFloat)strokeW completed:(void (^)(UIImage *image))completedB {
+    [self genarateImageWithSize:size draw:^(CGSize size, CGContextRef context) {
+        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:(CGRect){{0, 0}, size} cornerRadius:radius];
+        if (strokeW != 0) {
+            [path setLineWidth:strokeW];
+        }
+        if (color) {
+            [color setFill];
+            [path fill];
+        }
+        if (strokeC) {
+            [strokeC setStroke];
+            [path stroke];
+        }
     } completed:^(UIImage *image) {
         if (completedB) {
             completedB(image);
