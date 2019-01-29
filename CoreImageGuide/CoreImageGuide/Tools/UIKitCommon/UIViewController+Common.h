@@ -34,7 +34,5 @@ typedef void (^KeyboardWillChangeBlock)(BOOL show, CGFloat distance, NSNotificat
 - (void)autoMoveByKeyboard;
 - (void)keyboardWillChange:(KeyboardWillChangeBlock)block;
 
-- (UIViewController *)controller;
-
 @end
 

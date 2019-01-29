@@ -108,14 +108,4 @@
     }];
 }
 
-- (UIViewController *)controller {
-    if ([self.nextResponder isKindOfClass:UIViewController.class]) {
-        return (UIViewController *)self.nextResponder;
-    } else if ([self.nextResponder isKindOfClass:UIView.class]) {
-        return [self controller];
-    }
-    
-    return nil;
-}
-
 @end

@@ -50,6 +50,8 @@
 		5CAB625A21AE4753006B3486 /* ProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB625921AE4753006B3486 /* ProcessingViewController.m */; };
 		5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */; };
 		5CAB627A21AFEAC7006B3486 /* CombineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB627921AFEAC7006B3486 /* CombineViewController.m */; };
+		5CB21E0A220036BC004C4F00 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB21E09220036BC004C4F00 /* ColorViewController.m */; };
+		5CB21E0D220036C9004C4F00 /* SizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB21E0C220036C9004C4F00 /* SizeViewController.m */; };
 		5CB5237221B5129900B499FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB5237121B5129900B499FA /* AppDelegate.m */; };
 		5CB5237421B5129A00B499FA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237321B5129A00B499FA /* GameScene.sks */; };
 		5CB5237621B5129A00B499FA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5237521B5129A00B499FA /* Actions.sks */; };
@@ -170,6 +172,10 @@
 		5CAB625B21AE498F006B3486 /* WechatIMG4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG4.jpeg; sourceTree = "<group>"; };
 		5CAB627821AFEAC7006B3486 /* CombineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CombineViewController.h; sourceTree = "<group>"; };
 		5CAB627921AFEAC7006B3486 /* CombineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CombineViewController.m; sourceTree = "<group>"; };
+		5CB21E08220036BC004C4F00 /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		5CB21E09220036BC004C4F00 /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		5CB21E0B220036C9004C4F00 /* SizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
+		5CB21E0C220036C9004C4F00 /* SizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
 		5CB5236E21B5129900B499FA /* SpriteKitUseCoreImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitUseCoreImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB5237021B5129900B499FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CB5237121B5129900B499FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -363,6 +369,10 @@
 				5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */,
 				5CDF8BB021EDCAF300FA866B /* FeedbackViewController.h */,
 				5CDF8BB121EDCAF300FA866B /* FeedbackViewController.m */,
+				5CB21E08220036BC004C4F00 /* ColorViewController.h */,
+				5CB21E09220036BC004C4F00 /* ColorViewController.m */,
+				5CB21E0B220036C9004C4F00 /* SizeViewController.h */,
+				5CB21E0C220036C9004C4F00 /* SizeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -782,6 +792,7 @@
 				5CDF8BAE21EC69FC00FA866B /* UIView+Common.m in Sources */,
 				5CAB624921AD3971006B3486 /* QSPView.m in Sources */,
 				5CAB624821AD3971006B3486 /* QSPTableViewHeaderView.m in Sources */,
+				5CB21E0A220036BC004C4F00 /* ColorViewController.m in Sources */,
 				5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */,
 				5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */,
 				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
@@ -822,6 +833,7 @@
 				5CB523DE21B77F8000B499FA /* QueryViewController.m in Sources */,
 				5CAB624D21AD3971006B3486 /* QSPTableViewVM.m in Sources */,
 				5CB523E621B7B8E400B499FA /* CommonTableViewSectionVM.m in Sources */,
+				5CB21E0D220036C9004C4F00 /* SizeViewController.m in Sources */,
 				5CDF8BB221EDCAF400FA866B /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "FeedbackViewController.h"
 #import "UIImage+Common.h"
+#import "ColorViewController.h"
 
 @interface FeedbackViewController ()
 
@@ -22,8 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.colorB.backgroundColor = [UIColor redColor];
-    self.sizeB.backgroundColor = [UIColor greenColor];
     [UIImage imageWithColor:[UIColor whiteColor] size:CGSizeMake(20, 20) cornerRadius:0 strokeColor:[UIColor blackColor] strokeWidth:2 completed:^(UIImage *image) {
         [self.colorB setImage:image forState:UIControlStateNormal];
     }];
@@ -35,6 +34,8 @@
 - (IBAction)forwardAction:(UIButton *)sender {
 }
 - (IBAction)colorAction:(UIButton *)sender {
+    ColorViewController *nextC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ColorInvertViewController"];
+    [self presentViewController:nextC animated:YES completion:nil];
 }
 - (IBAction)sizeAction:(UIButton *)sender {
 }
