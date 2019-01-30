@@ -8,10 +8,14 @@
 
 #import "BaseViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface ColorViewController : BaseViewController
 
+@property (strong, nonatomic) UIColor *color;
+@property (strong, nonatomic, readonly) UIColor *currentC;
+@property (copy, nonatomic) void (^ensureB)(UIColor *color);
+
 @end
+
+NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
