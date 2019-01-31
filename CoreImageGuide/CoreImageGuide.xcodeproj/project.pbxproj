@@ -10,6 +10,7 @@
 		4730639C1E53D51496BF3E70 /* libPods-CoreImageGuide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */; };
 		5C188BA721BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */; };
 		5C188BAB21BE605F0030FAEC /* 21E58PIC58i_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */; };
+		5C2392BD2202DC1E008E36FE /* PaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2392BC2202DC1D008E36FE /* PaintView.m */; };
 		5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127C21BE83F50094E644 /* CIFaceVignette.m */; };
 		5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B127F21BE87E60094E644 /* FaceVignetteViewController.m */; };
 		5C4B128321BF533C0094E644 /* CILinearFocus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B128221BF533C0094E644 /* CILinearFocus.m */; };
@@ -94,6 +95,8 @@
 		56EDB5E205725209C9DDEFE4 /* libPods-CoreImageGuide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreImageGuide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2144026043-5a3b35ba01e59_articlex.jpeg"; sourceTree = "<group>"; };
 		5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 21E58PIC58i_1024.jpg; sourceTree = "<group>"; };
+		5C2392BB2202DC1D008E36FE /* PaintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintView.h; sourceTree = "<group>"; };
+		5C2392BC2202DC1D008E36FE /* PaintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintView.m; sourceTree = "<group>"; };
 		5C4B127B21BE83F50094E644 /* CIFaceVignette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIFaceVignette.h; sourceTree = "<group>"; };
 		5C4B127C21BE83F50094E644 /* CIFaceVignette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIFaceVignette.m; sourceTree = "<group>"; };
 		5C4B127E21BE87E60094E644 /* FaceVignetteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceVignetteViewController.h; sourceTree = "<group>"; };
@@ -521,6 +524,8 @@
 		5CAB623921AD3971006B3486 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C2392BB2202DC1D008E36FE /* PaintView.h */,
+				5C2392BC2202DC1D008E36FE /* PaintView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 				5CDF8BAF21EC69FC00FA866B /* UIViewController+Common.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
 				5CAB61F921AD37C2006B3486 /* main.m in Sources */,
+				5C2392BD2202DC1E008E36FE /* PaintView.m in Sources */,
 				5C4B128021BE87E60094E644 /* FaceVignetteViewController.m in Sources */,
 				5C4B127D21BE83F50094E644 /* CIFaceVignette.m in Sources */,
 				5CB523E121B7A54B00B499FA /* QueryVM.m in Sources */,

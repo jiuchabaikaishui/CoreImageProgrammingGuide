@@ -22,12 +22,12 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        [self defaultV];
+        [self defaultValue];
     }
     
     return self;
 }
-- (void)defaultV {
+- (void)defaultValue {
     [self setModalPresentationStyle:UIModalPresentationOverCurrentContext];
     self.color = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:1.0f];
     self.size = 2;
@@ -37,6 +37,11 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor clearColor];
+    if (self.size < self.sizeS.minimumValue) {
+        self.size = (NSInteger)self.sizeS.minimumValue;
+    }
+    self.sizeL.text = [NSString stringWithFormat:@"%zi", self.size];
+    self.sizeS.value = (float)self.size;
     [self updateImage];
     
     @weakify(self);
