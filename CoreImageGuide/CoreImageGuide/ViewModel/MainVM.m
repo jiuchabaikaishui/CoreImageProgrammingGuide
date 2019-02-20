@@ -87,7 +87,7 @@
             sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"使用反馈处理图像").headerDetailSet(@"随着时间的推移累积图像数据");
             
             sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
-                cellVM.segueIDSet(@"MainToPaint").accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"MicroPaint").detailSet(@"绘画小程序");
+                cellVM.segueIDSet(@"MainToPaint").realMSet(YES).accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"MicroPaint").detailSet(@"绘画小程序（运行于真机）");
             });
         });
     }

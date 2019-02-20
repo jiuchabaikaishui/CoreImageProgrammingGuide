@@ -44,7 +44,14 @@
     [self.mainVM.tableViewVM.didSelectRowSignal subscribeNext:^(QSPTableViewAndIndexPath *x) {
         @strongify(self);
         MainTableViewCellVM *cellVM = [x.tableView.vm rowVMWithIndexPath:x.indexPath];
-        [self performSegueWithIdentifier:cellVM.segueID sender:cellVM];
+        if (cellVM.realM && TARGET_IPHONE_SIMULATOR) {
+            UIAlertController *alterC = [UIAlertController alertControllerWithTitle:@"提示" message:@"请运行于真机！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alterC addAction:okAction];
+            [self presentViewController:alterC animated:YES completion:nil];
+        } else {
+            [self performSegueWithIdentifier:cellVM.segueID sender:cellVM];
+        }
     }];
 }
 

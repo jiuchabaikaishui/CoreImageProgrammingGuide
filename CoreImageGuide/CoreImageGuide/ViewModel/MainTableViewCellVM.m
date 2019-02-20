@@ -20,5 +20,15 @@
         return self;
     };
 }
+- (void)setRealMSet:(BOOL)realM {
+    _realM = realM;
+}
+- (MainTableViewCellVM * (^)(BOOL))realMSet {
+    return ^(BOOL realM){
+        self.realMSet = realM;
+        
+        return self;
+    };
+}
 
 @end

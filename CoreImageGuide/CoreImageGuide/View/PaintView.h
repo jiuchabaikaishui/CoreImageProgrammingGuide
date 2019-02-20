@@ -13,6 +13,11 @@
 @property (strong, nonatomic) UIColor *brushColor;
 @property (assign, nonatomic) NSInteger brushSize;
 
+/**
+ 清屏
+ */
+- (void)clearScreen;
+
 @end
 
 NS_ASSUME_NONNULL_BEGIN

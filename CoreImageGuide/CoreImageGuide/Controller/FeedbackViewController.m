@@ -33,9 +33,8 @@
 }
 
 #pragma mark - 触摸点击方法
-- (IBAction)backAction:(UIButton *)sender {
-}
-- (IBAction)forwardAction:(UIButton *)sender {
+- (IBAction)clearAction:(UIButton *)sender {
+    [self.paintV clearScreen];
 }
 - (IBAction)colorAction:(UIButton *)sender {
     ColorViewController *nextC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ColorInvertViewController"];

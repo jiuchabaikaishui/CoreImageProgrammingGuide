@@ -573,11 +573,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCM-9v-bEe" customClass="PaintView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="541"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-pH-zPO">
                                 <rect key="frame" x="24" y="613" width="37" height="34"/>
-                                <state key="normal" title="回退">
+                                <state key="normal" title="清除">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="disabled">
@@ -587,26 +587,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="backAction:" destination="qWv-DB-SNs" eventType="touchUpInside" id="rgA-Gc-OaV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0Z-q0-xct">
-                                <rect key="frame" x="69" y="613" width="37" height="34"/>
-                                <state key="normal" title="前进">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="forwardAction:" destination="qWv-DB-SNs" eventType="touchUpInside" id="Avc-Uk-sqs"/>
+                                    <action selector="clearAction:" destination="qWv-DB-SNs" eventType="touchUpInside" id="hBQ-fH-XTD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpC-ne-2hE">
-                                <rect key="frame" x="114" y="613" width="56" height="34"/>
+                                <rect key="frame" x="69" y="613" width="56" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="1sk-Kv-FMO"/>
                                 </constraints>
@@ -624,7 +609,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhD-YM-GV1">
-                                <rect key="frame" x="178" y="613" width="89" height="34"/>
+                                <rect key="frame" x="133" y="613" width="89" height="34"/>
                                 <state key="normal" title="画笔大小:2">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -641,20 +626,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f0Z-q0-xct" firstAttribute="height" secondItem="vJq-pH-zPO" secondAttribute="height" id="CNt-C2-fCg"/>
                             <constraint firstItem="NhD-YM-GV1" firstAttribute="height" secondItem="vJq-pH-zPO" secondAttribute="height" id="CPC-JI-lgo"/>
-                            <constraint firstItem="f0Z-q0-xct" firstAttribute="leading" secondItem="vJq-pH-zPO" secondAttribute="trailing" constant="8" id="EZD-5x-FDm"/>
                             <constraint firstItem="vJq-pH-zPO" firstAttribute="top" secondItem="YCM-9v-bEe" secondAttribute="bottom" constant="8" id="Spa-Fw-jV4"/>
                             <constraint firstItem="QpC-ne-2hE" firstAttribute="height" secondItem="vJq-pH-zPO" secondAttribute="height" id="Uuu-06-xsZ"/>
+                            <constraint firstItem="QpC-ne-2hE" firstAttribute="leading" secondItem="vJq-pH-zPO" secondAttribute="trailing" constant="8" id="Wsm-TR-qS1"/>
                             <constraint firstItem="YCM-9v-bEe" firstAttribute="top" secondItem="Jmg-6s-JUX" secondAttribute="top" id="aRC-kx-czV"/>
                             <constraint firstItem="YCM-9v-bEe" firstAttribute="trailing" secondItem="Jmg-6s-JUX" secondAttribute="trailing" id="bSJ-OG-taY"/>
                             <constraint firstItem="vJq-pH-zPO" firstAttribute="leading" secondItem="Jmg-6s-JUX" secondAttribute="leading" constant="24" id="fcJ-QC-HLO"/>
                             <constraint firstItem="Jmg-6s-JUX" firstAttribute="bottom" secondItem="vJq-pH-zPO" secondAttribute="bottom" constant="20" id="gUt-Fv-52B"/>
                             <constraint firstItem="Jmg-6s-JUX" firstAttribute="bottom" secondItem="QpC-ne-2hE" secondAttribute="bottom" constant="20" id="iNa-pr-jRS"/>
                             <constraint firstItem="NhD-YM-GV1" firstAttribute="leading" secondItem="QpC-ne-2hE" secondAttribute="trailing" constant="8" id="kcy-il-3Bq"/>
-                            <constraint firstItem="Jmg-6s-JUX" firstAttribute="bottom" secondItem="f0Z-q0-xct" secondAttribute="bottom" constant="20" id="o8G-MA-IUC"/>
                             <constraint firstItem="YCM-9v-bEe" firstAttribute="leading" secondItem="Jmg-6s-JUX" secondAttribute="leading" id="t9g-CB-fwE"/>
-                            <constraint firstItem="QpC-ne-2hE" firstAttribute="leading" secondItem="f0Z-q0-xct" secondAttribute="trailing" constant="8" id="vrC-Yu-50d"/>
                             <constraint firstItem="Jmg-6s-JUX" firstAttribute="bottom" secondItem="NhD-YM-GV1" secondAttribute="bottom" constant="20" id="wpl-kR-gwF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jmg-6s-JUX"/>
