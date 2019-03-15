@@ -42,7 +42,7 @@
 - (IBAction)enhanceAction:(UIButton *)sender {
     CIImage *image = [[CIImage alloc] initWithImage:self.currentI];
     id orientation = [[image properties] valueForKey:CFBridgingRelease(kCGImagePropertyOrientation)];
-    NSArray *adjustments = [image autoAdjustmentFiltersWithOptions:orientation ? orientation : nil];
+    NSArray *adjustments = [image autoAdjustmentFiltersWithOptions:orientation ? @{CIDetectorImageOrientation: orientation} : nil];
     if (adjustments && adjustments.count) {
         for (CIFilter *filter in adjustments) {
             [filter setValue:image forKey:kCIInputImageKey];

@@ -31,10 +31,14 @@
             });
         });
         _tableViewVM.addSectionVMCreate(CommonTableViewSectionVM.class, ^(CommonTableViewSectionVM *sectionVM){
-            sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"面部检测").headerDetailSet(@"分析和查找图像中的人脸");
+            sectionVM.headerClassSet(CommonTableViewHeaderView.class).headerTitleSet(@"图像检测").headerDetailSet(@"分析和查找图像中的一些元素");
             sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
-                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"检测面孔及其特征").detailSet(@"CIDetector类在图像中查找面空并分析特征");
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"检测脸部及其特征").detailSet(@"CIDetector类在图像中查找脸部并分析特征");
                 cellVM.segueIDSet(@"MainToFace");
+            });
+            sectionVM.addRowVMCreate(MainTableViewCellVM.class, ^(MainTableViewCellVM *cellVM){
+                cellVM.accessoryTypeSet(UITableViewCellAccessoryDisclosureIndicator).cellClassSet(CommonTableViewCell.class).titleSet(@"检测矩形及其特征").detailSet(@"CIDetector类在图像中查找矩形并分析特征");
+                cellVM.segueIDSet(@"MainToRectangle");
             });
         });
         _tableViewVM.addSectionVMCreate(CommonTableViewSectionVM.class, ^(CommonTableViewSectionVM *sectionVM){

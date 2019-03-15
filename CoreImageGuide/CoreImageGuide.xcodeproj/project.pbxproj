@@ -21,6 +21,8 @@
 		5C4B129521BFA7DE0094E644 /* PixellateTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129421BFA7DE0094E644 /* PixellateTransitionViewController.m */; };
 		5C4B129821BFCC020094E644 /* CIOldFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129721BFCC020094E644 /* CIOldFilm.m */; };
 		5C4B129B21C0B95A0094E644 /* OldFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */; };
+		5C6274CE223B9CB800827690 /* RectangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6274CD223B9CB800827690 /* RectangleViewController.m */; };
+		5C6274D5223BAE9F00827690 /* IMG_0130.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 5C6274D4223BAE9F00827690 /* IMG_0130.PNG */; };
 		5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5C688C9121B4E404006D0CB2 /* 录屏480.mov */; };
 		5C688C9521B4E443006D0CB2 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C688C9421B4E443006D0CB2 /* VideoViewController.m */; };
 		5CAB61EB21AD37BB006B3486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAB61EA21AD37BB006B3486 /* AppDelegate.m */; };
@@ -117,6 +119,9 @@
 		5C4B129721BFCC020094E644 /* CIOldFilm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIOldFilm.m; sourceTree = "<group>"; };
 		5C4B129921C0B95A0094E644 /* OldFilmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldFilmViewController.h; sourceTree = "<group>"; };
 		5C4B129A21C0B95A0094E644 /* OldFilmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OldFilmViewController.m; sourceTree = "<group>"; };
+		5C6274CC223B9CB800827690 /* RectangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleViewController.h; sourceTree = "<group>"; };
+		5C6274CD223B9CB800827690 /* RectangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectangleViewController.m; sourceTree = "<group>"; };
+		5C6274D4223BAE9F00827690 /* IMG_0130.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0130.PNG; path = ../../../../../../../../../Downloads/IMG_0130.PNG; sourceTree = "<group>"; };
 		5C688C9121B4E404006D0CB2 /* 录屏480.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "录屏480.mov"; sourceTree = "<group>"; };
 		5C688C9321B4E443006D0CB2 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		5C688C9421B4E443006D0CB2 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
@@ -352,6 +357,8 @@
 				5CB523D021B53A4F00B499FA /* MetalViewController.m */,
 				5CB523D221B65B8400B499FA /* FaceViewController.h */,
 				5CB523D321B65B8400B499FA /* FaceViewController.m */,
+				5C6274CC223B9CB800827690 /* RectangleViewController.h */,
+				5C6274CD223B9CB800827690 /* RectangleViewController.m */,
 				5CB523D721B68A5D00B499FA /* EnhanceViewController.h */,
 				5CB523D821B68A5D00B499FA /* EnhanceViewController.m */,
 				5CB523DC21B77F8000B499FA /* QueryViewController.h */,
@@ -415,6 +422,7 @@
 		5CAB620C21AD3971006B3486 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5C6274D4223BAE9F00827690 /* IMG_0130.PNG */,
 				5C188BAA21BE605F0030FAEC /* 21E58PIC58i_1024.jpg */,
 				5C188BA621BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg */,
 				5CB523DA21B690CD00B499FA /* WechatIMG7.jpeg */,
@@ -723,6 +731,7 @@
 				5CAB625C21AE498F006B3486 /* WechatIMG4.jpeg in Resources */,
 				5CB523DB21B690CD00B499FA /* WechatIMG7.jpeg in Resources */,
 				5C688C9221B4E404006D0CB2 /* 录屏480.mov in Resources */,
+				5C6274D5223BAE9F00827690 /* IMG_0130.PNG in Resources */,
 				5CB523D621B65CED00B499FA /* timg.jpeg in Resources */,
 				5C188BA721BE1E8F0030FAEC /* 2144026043-5a3b35ba01e59_articlex.jpeg in Resources */,
 				5CAB61F621AD37C2006B3486 /* LaunchScreen.storyboard in Resources */,
@@ -801,6 +810,7 @@
 				5CB523EA21BA1EEA00B499FA /* CIColorInverte.m in Sources */,
 				5CAB61EE21AD37BB006B3486 /* MainViewController.m in Sources */,
 				5CB523D121B53A4F00B499FA /* MetalViewController.m in Sources */,
+				5C6274CE223B9CB800827690 /* RectangleViewController.m in Sources */,
 				5CDF8BAF21EC69FC00FA866B /* UIViewController+Common.m in Sources */,
 				5CAB623B21AD3971006B3486 /* BaseViewController.m in Sources */,
 				5CAB61F921AD37C2006B3486 /* main.m in Sources */,
@@ -1038,7 +1048,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CBB7T9SG3B;
+				DEVELOPMENT_TEAM = 878VK442P7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;
@@ -1061,7 +1071,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CBB7T9SG3B;
+				DEVELOPMENT_TEAM = 878VK442P7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CoreImageGuide/Common/Source/PrefixHeader.pch;
 				INFOPLIST_FILE = CoreImageGuide/Other/System/Info.plist;

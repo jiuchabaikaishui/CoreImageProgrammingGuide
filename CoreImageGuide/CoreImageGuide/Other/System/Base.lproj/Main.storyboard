@@ -50,11 +50,12 @@
                         <segue destination="N7g-G8-sjP" kind="show" identifier="MainToPixellateTransition" id="L9W-dp-BeC"/>
                         <segue destination="uQf-w3-und" kind="show" identifier="MainToOldFilm" id="PpD-Uo-mFg"/>
                         <segue destination="qWv-DB-SNs" kind="show" identifier="MainToPaint" id="dzd-MM-Svm"/>
+                        <segue destination="mnr-tI-BtR" kind="show" identifier="MainToRectangle" id="wge-lq-3u5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="179.46026986506749"/>
+            <point key="canvasLocation" x="484" y="179"/>
         </scene>
         <!--复合滤镜使用-->
         <scene sceneID="kWx-Io-ylM">
@@ -204,6 +205,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycl-bm-soh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1236" y="-1204.047976011994"/>
+        </scene>
+        <!--检测矩形-->
+        <scene sceneID="d4t-3h-olc">
+            <objects>
+                <viewController id="mnr-tI-BtR" customClass="RectangleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hld-3Q-jXB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmn-xe-b1e">
+                                <rect key="frame" x="16" y="617" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ExI-LS-8VO"/>
+                                </constraints>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="mnr-tI-BtR" eventType="touchUpInside" id="oC6-yn-Cln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noY-Eh-mLx">
+                                <rect key="frame" x="55" y="617" width="31" height="30"/>
+                                <state key="normal" title="检测"/>
+                                <connections>
+                                    <action selector="detectorAction:" destination="mnr-tI-BtR" eventType="touchUpInside" id="krS-ct-o5h"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0130.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="8ZZ-P5-dt6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lmn-xe-b1e" firstAttribute="top" secondItem="8ZZ-P5-dt6" secondAttribute="bottom" constant="8" id="6ms-37-gg0"/>
+                            <constraint firstItem="8ZZ-P5-dt6" firstAttribute="leading" secondItem="qss-Qc-Wix" secondAttribute="leading" id="AxW-zv-PgG"/>
+                            <constraint firstItem="8ZZ-P5-dt6" firstAttribute="trailing" secondItem="qss-Qc-Wix" secondAttribute="trailing" id="CqB-Io-G8d"/>
+                            <constraint firstItem="8ZZ-P5-dt6" firstAttribute="top" secondItem="qss-Qc-Wix" secondAttribute="top" id="MQb-Z2-mX8"/>
+                            <constraint firstItem="noY-Eh-mLx" firstAttribute="leading" secondItem="lmn-xe-b1e" secondAttribute="trailing" constant="8" id="XBY-XO-Kn9"/>
+                            <constraint firstItem="qss-Qc-Wix" firstAttribute="bottom" secondItem="noY-Eh-mLx" secondAttribute="bottom" constant="20" id="coU-Aa-Obt"/>
+                            <constraint firstItem="lmn-xe-b1e" firstAttribute="leading" secondItem="qss-Qc-Wix" secondAttribute="leading" constant="16" id="eMK-1R-j9o"/>
+                            <constraint firstItem="qss-Qc-Wix" firstAttribute="bottom" secondItem="lmn-xe-b1e" secondAttribute="bottom" constant="20" id="ivH-93-xfJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qss-Qc-Wix"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="检测矩形" id="Ag2-d3-YxP">
+                        <barButtonItem key="rightBarButtonItem" title="图片" id="ALj-zu-zQV">
+                            <connections>
+                                <action selector="pictureAction:" destination="mnr-tI-BtR" id="dSB-f5-vk1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detectorB" destination="noY-Eh-mLx" id="dYA-a2-uw4"/>
+                        <outlet property="imageV" destination="8ZZ-P5-dt6" id="DGs-8N-dmL"/>
+                        <outlet property="pictureB" destination="ALj-zu-zQV" id="Ogg-h3-kbY"/>
+                        <outlet property="resetB" destination="lmn-xe-b1e" id="P6O-Cz-QQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfQ-ob-Jkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135.2" y="-528.48575712143929"/>
         </scene>
         <!--查询滤镜-->
         <scene sceneID="Nc3-pT-ioc">
@@ -472,7 +533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUc-RQ-jWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="178.56071964017991"/>
+            <point key="canvasLocation" x="1236" y="179"/>
         </scene>
         <!--自动增强-->
         <scene sceneID="uJ5-Va-pM7">
@@ -1160,6 +1221,7 @@
     <resources>
         <image name="2144026043-5a3b35ba01e59_articlex.jpeg" width="533" height="800"/>
         <image name="21E58PIC58i_1024.jpg" width="2111" height="1200"/>
+        <image name="IMG_0130.PNG" width="1698" height="1352"/>
         <image name="WechatIMG4.jpeg" width="1079" height="1618"/>
         <image name="WechatIMG7.jpeg" width="720" height="1280"/>
         <image name="timg.jpeg" width="1200" height="800"/>
